@@ -8,7 +8,7 @@
 import Foundation
 import Observation
 
-@Observable class ViewModel {
+class ViewModel: ObservableObject {
     @Published var people: [Person]
 //https://stackoverflow.com/questions/76451272/how-to-use-observable-in-xcode-15-beta
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPersons")
