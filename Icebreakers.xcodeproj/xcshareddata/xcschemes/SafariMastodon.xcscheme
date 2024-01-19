@@ -56,8 +56,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "1"
+         BundleIdentifier = "com.teleortho3d.Icebreakers"
+         RemotePath = "/Users/roblisenko/Library/Developer/CoreSimulator/Devices/2545E979-BE11-4E05-B76B-392A00605D08/data/Containers/Bundle/Application/DB1BEBDD-8DF7-4E7D-8742-86EF7E7CC032/Icebreakers.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57F3D13129E98C5F005A18DD"
@@ -65,7 +69,7 @@
             BlueprintName = "Icebreakers"
             ReferencedContainer = "container:Icebreakers.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
