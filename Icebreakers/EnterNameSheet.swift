@@ -22,6 +22,7 @@ struct EnterNameSheet: View {
         NavigationView {
             VStack {
                 ZStack {
+                    //these do not need to be full size, would free up more space to fit onscreen keyboard
                     Image("polaroidstockphoto")
                     image?
                         .resizable()

@@ -136,7 +136,7 @@ struct ExtractedView: View {
                 .padding(20)
                 .frame(width: 250, height: 275)
             }
-            
+            //            CameraView() {
             ZStack {
                 Color("Gamboge")
                     .cornerRadius(30)
@@ -156,6 +156,7 @@ struct ExtractedView: View {
             }
             .padding(20)
             .frame(width: 250, height: 275)
+//        }
             .onTapGesture {
                 isCameraShowing = true
                 // CameraView()  // Why is this not in scope?
