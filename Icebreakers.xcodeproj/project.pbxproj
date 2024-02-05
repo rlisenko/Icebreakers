@@ -7,21 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3B28E72B7073E400B86324 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B28E62B7073E400B86324 /* AccessCameraView.swift */; };
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
 		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
 		57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */; };
 		57D4C33329F2C151004AA9E5 /* EnterNameSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */; };
-		57D63B7429F6BB9B00ED89EB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */; };
-		57D63B7729F6BB9B00ED89EB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7629F6BB9B00ED89EB /* _locales */; };
-		57D63B7929F6BB9B00ED89EB /* images in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7829F6BB9B00ED89EB /* images */; };
-		57D63B7B29F6BB9B00ED89EB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7A29F6BB9B00ED89EB /* manifest.json */; };
-		57D63B7D29F6BB9B00ED89EB /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7C29F6BB9B00ED89EB /* background.js */; };
-		57D63B7F29F6BB9B00ED89EB /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7E29F6BB9B00ED89EB /* content.js */; };
-		57D63B8129F6BB9B00ED89EB /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B8029F6BB9B00ED89EB /* popup.html */; };
-		57D63B8329F6BB9B00ED89EB /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B8229F6BB9B00ED89EB /* popup.css */; };
-		57D63B8529F6BB9B00ED89EB /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B8429F6BB9B00ED89EB /* popup.js */; };
-		57D63B8929F6BB9B00ED89EB /* SafariMastodon.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		57D63B9329F7055C00ED89EB /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B9129F7055B00ED89EB /* PermanentMarker-Regular.ttf */; };
 		57D63B9429F7055C00ED89EB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B9229F7055B00ED89EB /* LICENSE.txt */; };
 		57DAA88329F81E8200D68F7C /* MultisheetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DAA88229F81E8200D68F7C /* MultisheetTest.swift */; };
@@ -48,16 +39,6 @@
 		57F3D17829E98D95005A18DD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D17729E98D95005A18DD /* Person.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		57D63B8729F6BB9B00ED89EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57F3D12A29E98C5F005A18DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 57D63B7029F6BB9B00ED89EB;
-			remoteInfo = SafariMastodon;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		57D63B8A29F6BB9B00ED89EB /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -65,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				57D63B8929F6BB9B00ED89EB /* SafariMastodon.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,12 +53,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A3B28E62B7073E400B86324 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
 		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
 		57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidDynamicRendering.swift; sourceTree = "<group>"; };
 		57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameSheet.swift; sourceTree = "<group>"; };
-		57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariMastodon.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		57D63B7629F6BB9B00ED89EB /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		57D63B7829F6BB9B00ED89EB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
@@ -118,13 +98,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57D63B6E29F6BB9B00ED89EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		57F3D12F29E98C5F005A18DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				57F3D13229E98C5F005A18DD /* Icebreakers.app */,
-				57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +178,7 @@
 				57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */,
 				57F3D15A29E98CA3005A18DD /* ContentView.swift */,
 				57F3D14629E98CA3005A18DD /* AddPersonView.swift */,
+				2A3B28E62B7073E400B86324 /* AccessCameraView.swift */,
 				57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */,
 				57F3D14729E98CA3005A18DD /* PolaroidDetailView.swift */,
 				57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */,
@@ -258,23 +231,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57D63B7029F6BB9B00ED89EB /* SafariMastodon */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57D63B8D29F6BB9B00ED89EB /* Build configuration list for PBXNativeTarget "SafariMastodon" */;
-			buildPhases = (
-				57D63B6D29F6BB9B00ED89EB /* Sources */,
-				57D63B6E29F6BB9B00ED89EB /* Frameworks */,
-				57D63B6F29F6BB9B00ED89EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SafariMastodon;
-			productName = SafariMastodon;
-			productReference = 57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		57F3D13129E98C5F005A18DD /* Icebreakers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57F3D14029E98C5F005A18DD /* Build configuration list for PBXNativeTarget "Icebreakers" */;
@@ -287,7 +243,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				57D63B8829F6BB9B00ED89EB /* PBXTargetDependency */,
 			);
 			name = Icebreakers;
 			productName = Icebreakers;
@@ -304,9 +259,6 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					57D63B7029F6BB9B00ED89EB = {
-						CreatedOnToolsVersion = 14.3;
-					};
 					57F3D13129E98C5F005A18DD = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -326,27 +278,11 @@
 			projectRoot = "";
 			targets = (
 				57F3D13129E98C5F005A18DD /* Icebreakers */,
-				57D63B7029F6BB9B00ED89EB /* SafariMastodon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		57D63B6F29F6BB9B00ED89EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57D63B7D29F6BB9B00ED89EB /* background.js in Resources */,
-				57D63B8329F6BB9B00ED89EB /* popup.css in Resources */,
-				57D63B8129F6BB9B00ED89EB /* popup.html in Resources */,
-				57D63B7929F6BB9B00ED89EB /* images in Resources */,
-				57D63B7B29F6BB9B00ED89EB /* manifest.json in Resources */,
-				57D63B7729F6BB9B00ED89EB /* _locales in Resources */,
-				57D63B7F29F6BB9B00ED89EB /* content.js in Resources */,
-				57D63B8529F6BB9B00ED89EB /* popup.js in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		57F3D13029E98C5F005A18DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,14 +297,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		57D63B6D29F6BB9B00ED89EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57D63B7429F6BB9B00ED89EB /* SafariWebExtensionHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		57F3D12E29E98C5F005A18DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +318,7 @@
 				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,
 				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
 				57F3D16F29E98CA3005A18DD /* ImageResizer.swift in Sources */,
+				2A3B28E72B7073E400B86324 /* AccessCameraView.swift in Sources */,
 				57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */,
 				57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */,
 				57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */,
@@ -403,75 +332,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		57D63B8829F6BB9B00ED89EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 57D63B7029F6BB9B00ED89EB /* SafariMastodon */;
-			targetProxy = 57D63B8729F6BB9B00ED89EB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		57D63B8B29F6BB9B00ED89EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 65C9KYKM98;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SafariMastodon/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers.SafariMastodon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		57D63B8C29F6BB9B00ED89EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 65C9KYKM98;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SafariMastodon/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers.SafariMastodon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		57F3D13E29E98C5F005A18DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -592,14 +453,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
-				DEVELOPMENT_TEAM = 65C9KYKM98;
+				DEVELOPMENT_TEAM = N76WE33BQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to take conference selfies.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a border around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -611,8 +474,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suz.Icebreakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -625,14 +489,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
-				DEVELOPMENT_TEAM = 65C9KYKM98;
+				DEVELOPMENT_TEAM = N76WE33BQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to take conference selfies.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a border around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -644,8 +510,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suz.Icebreakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,15 +522,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57D63B8D29F6BB9B00ED89EB /* Build configuration list for PBXNativeTarget "SafariMastodon" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57D63B8B29F6BB9B00ED89EB /* Debug */,
-				57D63B8C29F6BB9B00ED89EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		57F3D12D29E98C5F005A18DD /* Build configuration list for PBXProject "Icebreakers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

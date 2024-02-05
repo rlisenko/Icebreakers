@@ -110,6 +110,7 @@ struct AddPersonView_Previews: PreviewProvider {
 struct ExtractedView: View {
   @Binding var selectedPhoto: PhotosPickerItem?
   @Binding var isCameraShowing: Bool
+  @State private var selectedImage: UIImage?
 
   var body: some View {
     VStack {
@@ -146,7 +147,7 @@ struct ExtractedView: View {
             .frame(width: 100, height: 80)
             .padding(20)
 
-          Text("Take New Selfie (coming soon)")
+          Text("Take New Selfie")
             .font(.title2)
             .fontWeight(.semibold)
             .multilineTextAlignment(.center)
@@ -157,6 +158,9 @@ struct ExtractedView: View {
       .frame(width: 250, height: 275)
       .onTapGesture {
         isCameraShowing = true
+      }
+      .fullScreenCover(isPresented: self.$isCameraShowing) {
+        accessCameraView(selectedImage: self.$selectedImage)
       }
       Spacer()
     }
