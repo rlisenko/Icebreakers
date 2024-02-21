@@ -16,7 +16,9 @@ struct ListBuddyView: View {
     
     var body: some View {
         NavigationView {
-            List {
+//            List {
+            ScrollView {
+                
                 ForEach(viewModel.people) { person in
                     NavigationLink {
                         person.image?
@@ -51,6 +53,7 @@ struct ListBuddyView: View {
     }
 }
 struct ListBuddyView_Previews: PreviewProvider {
+    @EnvironmentObject var viewModel: ViewModel
     
     static var previews: some View {
         ListBuddyView()

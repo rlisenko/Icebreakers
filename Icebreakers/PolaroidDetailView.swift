@@ -77,7 +77,7 @@ struct PolaroidDetailView: View {
 
 struct PolaroidDetailView_Previews: PreviewProvider {
     static var image = Image("UnfrozenMasto")
-    static var name = "Thawing Masto"
+    static var name = "Thawing Masto Test"
     static var socialHandle = "@mockUser@mastodon.social"
     @State static var doneSaving = false
     

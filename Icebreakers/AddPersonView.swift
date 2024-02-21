@@ -44,16 +44,16 @@ struct AddPersonView: View {
             ZStack(alignment: .top) {
                 GeometryReader { reader in
                     Color("ClearBlue")
-                        .frame(height: reader.safeAreaInsets.top * 1.3, alignment: .top)
+                        .frame(height: reader.safeAreaInsets.top * 1, alignment: .top)
                         .ignoresSafeArea()
                 }
                 VStack {
-                    HStack(alignment: .top) {
-                        Text("It's the")
-                        Text("Elephant").strikethrough()
-                        Text("Mastodon in the Room")
-                    } .font(.caption)
-                    
+//                    HStack(alignment: .top) {
+//                        Text("It's the")
+//                        Text("Elephant").strikethrough()
+//                        Text("Mastodon in the Room")
+//                    } .font(.caption)
+//                    
                     ExtractedView(selectedPhoto: $selectedPhoto, isCameraShowing: $isCameraShowing)
                         .sheet(isPresented: $isCameraShowing) {
                             //                        CameraView()
@@ -84,7 +84,7 @@ struct AddPersonView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
-                        Text("The IceBreaker 🐘").font(.largeTitle)
+                        Text("IceBreaker 🐘").font(.largeTitle)
                         
                     }
                 }

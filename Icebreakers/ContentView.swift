@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import UIKit
+//import UIKit
 
 struct ContentView: View {
     @Environment(\.accessibilityShowButtonShapes)
@@ -19,36 +19,36 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $tabselection) {
-            AddPersonView(tabselection: $tabselection)
-                .tabItem {
-                        Label {
-                            Text("Get Buddy Info")
-                        } icon: {
-                            Image("noun-polaroid-3")
-                        }
-                }
-//                .underline(accessibilityShowButtonShapes)
-                .tag(0)
-                .environmentObject(viewModel)
-            
-            AddPersonView(tabselection: $tabselection)
-                .tabItem {
-                    Label("Send My Info", systemImage: "square.and.arrow.up")
-                }
-                .tag(1)
-                .environmentObject(viewModel)
-            
-            ListBuddyView()
+            ExamplePeopleView()
                 .tabItem {
                     Label {
-                        Text("List of Buddies")
+                        Text("People")
                     } icon: {
                         Image("noun-photoalbum-2%")
                     }
                 }
+                .tag(1)
+                .environmentObject(viewModel)
+            
+//            ExamplePizzaTimeView(tabselection: $tabselection)
+            ExamplePizzaTimeView()
+                .tabItem {
+                    Label("Pizza Time", systemImage: "fork.knife")
+                }
                 .tag(2)
                 .environmentObject(viewModel)
             
+//            ExampleTrivia(tabselection: $tabselection)
+            ExampleTrivia()
+                .tabItem {
+                    Label("Trivia", systemImage: "graduationcap")
+                }
+                .tag(3)
+                .environmentObject(viewModel)
+            
+//            ListBuddyView()
+
+
         }
         .preferredColorScheme(.dark)
         .accentColor(.white)
