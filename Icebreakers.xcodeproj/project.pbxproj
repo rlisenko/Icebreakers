@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0E08152B856C4100CE1D42 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E08142B856C4100CE1D42 /* AccessCameraView.swift */; };
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
 		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A0E08142B856C4100CE1D42 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
 		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				57D63B8E29F6BBC000ED89EB /* Info.plist */,
 				57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */,
 				57F3D15A29E98CA3005A18DD /* ContentView.swift */,
+				2A0E08142B856C4100CE1D42 /* AccessCameraView.swift */,
 				57F3D14629E98CA3005A18DD /* AddPersonView.swift */,
 				57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */,
 				57F3D14729E98CA3005A18DD /* PolaroidDetailView.swift */,
@@ -390,6 +393,7 @@
 				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,
 				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
 				57F3D16F29E98CA3005A18DD /* ImageResizer.swift in Sources */,
+				2A0E08152B856C4100CE1D42 /* AccessCameraView.swift in Sources */,
 				57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */,
 				57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */,
 				57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */,
@@ -417,7 +421,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 65C9KYKM98;
+				DEVELOPMENT_TEAM = N76WE33BQK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariMastodon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
@@ -433,7 +437,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers.SafariMastodon;
+				PRODUCT_BUNDLE_IDENTIFIER = org.suz.Icebreakers.SafariMastodon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -447,7 +451,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 65C9KYKM98;
+				DEVELOPMENT_TEAM = N76WE33BQK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariMastodon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
@@ -463,7 +467,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers.SafariMastodon;
+				PRODUCT_BUNDLE_IDENTIFIER = org.suz.Icebreakers.SafariMastodon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -595,11 +599,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
-				DEVELOPMENT_TEAM = 65C9KYKM98;
+				DEVELOPMENT_TEAM = N76WE33BQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access the camera to take memorable selfies!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a border around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -611,7 +616,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.suz.Icebreakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -628,11 +633,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
-				DEVELOPMENT_TEAM = 65C9KYKM98;
+				DEVELOPMENT_TEAM = N76WE33BQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access the camera to take memorable selfies!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a border around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -644,7 +650,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.suz.Icebreakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
