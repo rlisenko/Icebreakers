@@ -53,9 +53,9 @@ struct ListBuddyView: View {
     }
 }
 struct ListBuddyView_Previews: PreviewProvider {
-    @EnvironmentObject var viewModel: ViewModel
     
     static var previews: some View {
         ListBuddyView()
+            .environmentObject(ViewModel())
     }
 }
