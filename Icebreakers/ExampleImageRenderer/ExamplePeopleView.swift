@@ -113,10 +113,10 @@ struct ExamplePeopleView: View {
     }
 }
 
-//#Preview {
-//    @EnvironmentObject var viewModel: ViewModel
-//    let data
-//    let columns []
-//
-//    ExamplePeopleView()
-//}
+struct ExamplePeopleView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        ExamplePeopleView()
+            .environmentObject(ViewModel())
+    }
+}

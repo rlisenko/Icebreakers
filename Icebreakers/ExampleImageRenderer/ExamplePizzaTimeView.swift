@@ -102,6 +102,10 @@ struct ExamplePizzaTimeView: View {
     }
 }
 
-//#Preview {
-//    ExamplePizzaTimeView()
-//}
+struct ExamplePizzaTimeView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        ExamplePizzaTimeView()
+            .environmentObject(ViewModel())
+    }
+}
