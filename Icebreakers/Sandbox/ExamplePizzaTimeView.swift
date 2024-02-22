@@ -82,6 +82,7 @@ struct ExamplePizzaTimeView: View {
                         }
                         .onDelete(perform: viewModel.removePerson)
                     }
+                    .padding(.horizontal)
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .principal) {

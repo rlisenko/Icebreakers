@@ -10,6 +10,8 @@
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
 		574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */; };
 		574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* ExampleTrivia.swift */; };
+		576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */; };
+		576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */; };
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
 		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
 		57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */; };
@@ -78,6 +80,8 @@
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePizzaTimeView.swift; sourceTree = "<group>"; };
 		574C06272B86509A00B5ED6F /* ExampleTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTrivia.swift; sourceTree = "<group>"; };
+		576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDFaceID.swift; sourceTree = "<group>"; };
+		576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsYourAppActive.swift; sourceTree = "<group>"; };
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
 		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
 		57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidDynamicRendering.swift; sourceTree = "<group>"; };
@@ -164,7 +168,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		57D63B8F29F6BD7500ED89EB /* ExampleImageRenderer */ = {
+		57D63B8F29F6BD7500ED89EB /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
 				57DAA88229F81E8200D68F7C /* MultisheetTest.swift */,
@@ -175,8 +179,10 @@
 				57F8F1E02B7E7275002D6115 /* ExamplePeopleView.swift */,
 				574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */,
 				574C06272B86509A00B5ED6F /* ExampleTrivia.swift */,
+				576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */,
+				576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */,
 			);
-			path = ExampleImageRenderer;
+			path = Sandbox;
 			sourceTree = "<group>";
 		};
 		57D63B9029F7055B00ED89EB /* Permanent_Marker */ = {
@@ -222,7 +228,7 @@
 				57F3D14529E98CA3005A18DD /* ImagePicker.swift */,
 				57F3D15B29E98CA3005A18DD /* ImageSaver.swift */,
 				57F3D14D29E98CA3005A18DD /* Model */,
-				57D63B8F29F6BD7500ED89EB /* ExampleImageRenderer */,
+				57D63B8F29F6BD7500ED89EB /* Sandbox */,
 				57F3D15029E98CA3005A18DD /* SwiftCamera */,
 				57F3D13929E98C5F005A18DD /* Assets.xcassets */,
 				57D63B9029F7055B00ED89EB /* Permanent_Marker */,
@@ -387,6 +393,7 @@
 				574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */,
 				57F3D16A29E98CA3005A18DD /* CameraService+Extensions.swift in Sources */,
 				57F3D16029E98CA3005A18DD /* ImagePicker.swift in Sources */,
+				576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */,
 				57F3D16529E98CA3005A18DD /* ContentViewModel.swift in Sources */,
 				57F3D17229E98CA3005A18DD /* ListBuddyView.swift in Sources */,
 				57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */,
@@ -401,6 +408,7 @@
 				57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */,
 				57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */,
 				57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */,
+				576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */,
 				574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */,
 				57F3D16129E98CA3005A18DD /* AddPersonView.swift in Sources */,
 				57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */,
@@ -607,6 +615,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -640,6 +649,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

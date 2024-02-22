@@ -20,6 +20,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $tabselection) {
             ExamplePeopleView()
+//            TouchIDFaceID()
                 .tabItem {
                     Label {
                         Text("People")
