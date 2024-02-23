@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B02B88E50D004DDFB7 /* Tab.swift */; };
+		5715C4B32B88E520004DDFB7 /* MyTabBarButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */; };
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
 		574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */; };
 		574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* ExampleTrivia.swift */; };
@@ -77,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5715C4B02B88E50D004DDFB7 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarButtonTest.swift; sourceTree = "<group>"; };
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePizzaTimeView.swift; sourceTree = "<group>"; };
 		574C06272B86509A00B5ED6F /* ExampleTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTrivia.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				574C06272B86509A00B5ED6F /* ExampleTrivia.swift */,
 				576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */,
 				576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */,
+				5715C4B02B88E50D004DDFB7 /* Tab.swift */,
+				5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */,
 			);
 			path = Sandbox;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 				57F8F1E12B7E7275002D6115 /* ExamplePeopleView.swift in Sources */,
 				57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */,
 				57D4C33329F2C151004AA9E5 /* EnterNameSheet.swift in Sources */,
+				5715C4B32B88E520004DDFB7 /* MyTabBarButtonTest.swift in Sources */,
 				57F3D16229E98CA3005A18DD /* PolaroidDetailView.swift in Sources */,
 				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,
 				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
@@ -412,6 +419,7 @@
 				574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */,
 				57F3D16129E98CA3005A18DD /* AddPersonView.swift in Sources */,
 				57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */,
+				5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */,
 				5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */,
 				57F3D17029E98CA3005A18DD /* CameraService.swift in Sources */,
 			);
