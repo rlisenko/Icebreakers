@@ -10,10 +10,6 @@ import SwiftUI
 import Observation
 
 struct ExamplePeopleView: View {
-
-    @State var isCameraShowing: Bool
-    @State private var selectedImage: UIImage?
-
     @EnvironmentObject var viewModel: ViewModel
     //    let image: Image
     let data = (1...100).map { "Item \($0)" }
@@ -23,6 +19,8 @@ struct ExamplePeopleView: View {
         GridItem(.flexible())
     ]
     
+    @State private var showAddPersonView = false
+
     var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
@@ -35,7 +33,7 @@ struct ExamplePeopleView: View {
                     Spacer(minLength: 20)
                     Button(action: {
                         // action to perform on tap
-                        isCameraShowing = true
+                        self.showAddPersonView = true
                     }) {
                         ZStack {
                             Image(systemName: "camera.shutter.button")
@@ -115,8 +113,8 @@ struct ExamplePeopleView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: self.$isCameraShowing) {
-            AccessCameraView(selectedImage: self.$selectedImage)
+        .sheet(isPresented: $showAddPersonView) {
+            AddPersonView()
         }
     }
 }
@@ -124,7 +122,7 @@ struct ExamplePeopleView: View {
 struct ExamplePeopleView_Previews: PreviewProvider {
 
     static var previews: some View {
-        ExamplePeopleView(isCameraShowing: false)
+        ExamplePeopleView()
             .environmentObject(ViewModel())
     }
 }
