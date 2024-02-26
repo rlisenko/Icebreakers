@@ -37,28 +37,31 @@ struct MyTabBarButtonTest: View {
                         
                     } label: {
                         ZStack {
-                         
+                            Rectangle()
+                                .frame(width: 70)
+                                .cornerRadius(7)
+                                .overlay(
+                                        RoundedRectangle(cornerRadius: 7)
+                                            .strokeBorder(Color("Lavender").opacity(0.6), lineWidth: 1)
+                                )
                             VStack(spacing: 5) {
                                 Image(systemName: item.icon)
+                                    .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
                                     .symbolVariant(.fill)
                                     .font(.largeTitle)
                                     .frame(width: 50, height: 40)
                                 Text(item.text)
+                                    .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
                                     .font(.caption.bold())
                                     .lineLimit(2)
                             }
-                            Rectangle()
-                                .stroke(.gray, lineWidth: 2)
-                                .frame(width: 70)
-                                .cornerRadius(7)
                             
-//                                .background(.ultraThinMaterial).opacity(0.5)
-//                                .strokeBorder(style: <#T##SwiftUI.StrokeStyle#>)
-                                
                         }
                         .frame(maxWidth: .infinity)
                     }
-                    .foregroundStyle(selectedTab == item.tab ? color : .gray)
+                    .foregroundStyle(selectedTab == item.tab ? color : .white.opacity(0.3))
+                    
+//                    .foregroundStyle(selectedTab == item.tab ? color : .gray)
 //                    .blendMode(selectedTab == item.tab ? .overlay : .normal)
                 }
             }

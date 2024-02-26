@@ -47,7 +47,8 @@ struct IceBreakersTabItem: Identifiable {
 //]
 
 var iceBreakersTabItems = [
-    IceBreakersTabItem(text: "People", icon: "noun-photoalbum-2%", tab: .people, color: Color("ClearBlue")),
+//    IceBreakersTabItem(text: "People", icon: "noun-photoalbum-2%", tab: .people, color: Color("ClearBlue")),
+    IceBreakersTabItem(text: "People", icon: "photo.stack", tab: .people, color: Color("ClearBlue")),
     IceBreakersTabItem(text: "Pizza Time", icon: "fork.knife", tab: .pizza, color: Color("Gamboge")),
     IceBreakersTabItem(text: "Trivia", icon: "graduationcap", tab: .trivia, color: Color("bluishGreen"))
 ]
