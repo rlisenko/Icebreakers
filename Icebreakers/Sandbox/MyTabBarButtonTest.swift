@@ -19,12 +19,16 @@ struct MyTabBarButtonTest: View {
                 switch selectedTab {
                 case .people:
                     ExamplePeopleView()
+                        .environmentObject(viewModel)
                 case .pizza:
                     ExamplePizzaTimeView()
+                        .environmentObject(viewModel)
                 case .trivia:
                     ExampleTrivia()
+                        .environmentObject(viewModel)
                 }
             }
+
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             
             HStack {
@@ -79,6 +83,7 @@ struct MyTabBarButtonTest: View {
             
 //            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
 //            .strokeStyle(cornerRadius: 34)
+            .background(.thickMaterial)
             .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea()
         }
