@@ -11,8 +11,6 @@ import Observation
 
 struct ExamplePeopleView: View {
     @EnvironmentObject var viewModel: ViewModel
-    //    let image: Image
-//    let data = (1...100).map { "Item \($0)" }
     
     let columns = [
         GridItem(.flexible()),
