@@ -38,12 +38,20 @@ struct MyTabBarButtonTest: View {
                     } label: {
                         ZStack {
                             Rectangle()
+                                   .fill(Color.clear)
+                                   .background(
+                                       Color.blue.opacity(0.4)
+                                           .blur(radius: 20) // Adjust the blur radius as needed
+                                   )
+//                                   .edgesIgnoringSafeArea(.all)  Extend the blur to cover the entire view
+                            Rectangle()
                                 .frame(width: 70)
                                 .cornerRadius(7)
                                 .overlay(
                                         RoundedRectangle(cornerRadius: 7)
                                             .strokeBorder(Color("Lavender").opacity(0.6), lineWidth: 1)
                                 )
+                                .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: -10)
                             VStack(spacing: 5) {
                                 Image(systemName: item.icon)
                                     .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
