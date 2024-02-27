@@ -49,7 +49,7 @@ struct MyTabBarButtonTest: View {
                                    )
 //                                   .edgesIgnoringSafeArea(.all)  Extend the blur to cover the entire view
                             Rectangle()
-                                .frame(width: 70)
+                                .frame(width: 75, height: 90)
                                 .cornerRadius(7)
                                 .overlay(
                                         RoundedRectangle(cornerRadius: 7)
@@ -72,14 +72,12 @@ struct MyTabBarButtonTest: View {
                         .frame(maxWidth: .infinity)
                     }
                     .foregroundStyle(selectedTab == item.tab ? color : .white.opacity(0.3))
-                    
-//                    .foregroundStyle(selectedTab == item.tab ? color : .gray)
-//                    .blendMode(selectedTab == item.tab ? .overlay : .normal)
                 }
             }
             .padding(.horizontal, 8)
             .padding(.top, 14)
-            .frame(height: 88, alignment: .top)
+            .padding(.bottom, 15)
+            .frame(height: 110, alignment: .top)
             
 //            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
 //            .strokeStyle(cornerRadius: 34)
