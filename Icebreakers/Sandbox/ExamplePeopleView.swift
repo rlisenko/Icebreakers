@@ -43,7 +43,15 @@ struct ExamplePeopleView: View {
                                 .frame(width: 74, height: 74)
                                 .overlay(
                                     Circle()
-                                        .stroke(Color(red: 0, green: 0.34, blue: 0.63), lineWidth: 1)
+//                                        .stroke(Color(red: 0, green: 0.34, blue: 0.63), lineWidth: 1)
+                                        .strokeBorder(
+                                                   LinearGradient(
+                                                    gradient: Gradient(colors: [Color("Lavender").opacity(0.6), .black.opacity(0.5)]),
+                                                       startPoint: .topLeading,
+                                                       endPoint: .bottomTrailing
+                                                   ),
+                                                   lineWidth: 2
+                                               )
                                         .frame(width: 74, height: 74)
                                 )
                         }

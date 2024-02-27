@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */; };
 		5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B02B88E50D004DDFB7 /* Tab.swift */; };
 		5715C4B32B88E520004DDFB7 /* MyTabBarButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */; };
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolStroke.swift; sourceTree = "<group>"; };
 		5715C4B02B88E50D004DDFB7 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarButtonTest.swift; sourceTree = "<group>"; };
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */,
 				5715C4B02B88E50D004DDFB7 /* Tab.swift */,
 				5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */,
+				5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */,
 			);
 			path = Sandbox;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
 				57F3D16F29E98CA3005A18DD /* ImageResizer.swift in Sources */,
 				57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */,
+				5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */,
 				57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */,
 				57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */,
 				576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */,

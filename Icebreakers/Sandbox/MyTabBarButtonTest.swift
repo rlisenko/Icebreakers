@@ -28,9 +28,10 @@ struct MyTabBarButtonTest: View {
                         .environmentObject(viewModel)
                 }
             }
-
+            
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             
+            ///The custom Tab Bar, needs to abstracted into different Views for clarity
             HStack {
                 ForEach(iceBreakersTabItems) { item in
                     Button {
@@ -42,18 +43,24 @@ struct MyTabBarButtonTest: View {
                     } label: {
                         ZStack {
                             Rectangle()
-                                   .fill(Color.clear)
-                                   .background(
-                                       Color.blue.opacity(0.4)
-                                           .blur(radius: 20) // Adjust the blur radius as needed
-                                   )
-//                                   .edgesIgnoringSafeArea(.all)  Extend the blur to cover the entire view
+                                .fill(Color.clear)
+                                .background(
+                                    Color.blue.opacity(0.4)
+                                        .blur(radius: 20)
+                                )
                             Rectangle()
-                                .frame(width: 75, height: 90)
+                                .frame(width: 75, height: 75)
                                 .cornerRadius(7)
                                 .overlay(
-                                        RoundedRectangle(cornerRadius: 7)
-                                            .strokeBorder(Color("Lavender").opacity(0.6), lineWidth: 1)
+                                    RoundedRectangle(cornerRadius: 7)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                gradient: Gradient(colors: [Color("Lavender").opacity(0.6), .black.opacity(0.5)]),
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 2
+                                        )
                                 )
                                 .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: -10)
                             VStack(spacing: 5) {
@@ -61,6 +68,7 @@ struct MyTabBarButtonTest: View {
                                     .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
                                     .symbolVariant(.fill)
                                     .font(.largeTitle)
+                                //                                    .stroke(Color.black)
                                     .frame(width: 50, height: 40)
                                 Text(item.text)
                                     .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
@@ -76,11 +84,11 @@ struct MyTabBarButtonTest: View {
             }
             .padding(.horizontal, 8)
             .padding(.top, 14)
-            .padding(.bottom, 15)
+            .padding(.bottom, 25)
             .frame(height: 110, alignment: .top)
             
-//            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
-//            .strokeStyle(cornerRadius: 34)
+            //            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
+            //            .strokeStyle(cornerRadius: 34)
             .background(.thickMaterial)
             .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea()

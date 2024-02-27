@@ -30,7 +30,7 @@ struct ExamplePizzaTimeView: View {
                         ZStack {
                             Image(systemName: "camera.shutter.button")
                                 .symbolRenderingMode(.multicolor)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.gray)
                                 .font(.system(size: 28))
                                 .fontWeight(.bold)
                                 .offset(y: -2)
@@ -40,7 +40,14 @@ struct ExamplePizzaTimeView: View {
                                 .frame(width: 74, height: 74)
                                 .overlay(
                                     Circle()
-                                        .stroke(Color(red: 0, green: 0.34, blue: 0.63), lineWidth: 1)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                gradient: Gradient(colors: [Color("Lavender").opacity(0.6), .black.opacity(0.5)]),
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 2
+                                        )
                                         .frame(width: 74, height: 74)
                                 )
                         }
@@ -91,7 +98,7 @@ struct ExamplePizzaTimeView: View {
                         }
                         ToolbarItem {
                             Button(action: {
-//Preferences sheet
+                                //Preferences sheet
                             }, label: {
                                 Label("Settings", systemImage: "gearshape")
                             })
@@ -104,7 +111,7 @@ struct ExamplePizzaTimeView: View {
 }
 
 struct ExamplePizzaTimeView_Previews: PreviewProvider {
-
+    
     static var previews: some View {
         ExamplePizzaTimeView()
             .environmentObject(ViewModel())
