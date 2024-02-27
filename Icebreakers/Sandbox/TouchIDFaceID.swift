@@ -19,7 +19,7 @@ struct TouchIDFaceID: View {
 //                    .font(.largeTitle)
                 
 //                Button("Get goin'") {
-                    ExamplePeopleView()
+                ExamplePeopleView(isCameraShowing: false)
 //                }
             } else {
                 Text("Locked 🔒")
