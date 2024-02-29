@@ -48,12 +48,6 @@ struct AddPersonView: View {
                         .ignoresSafeArea()
                 }
                 VStack {
-//                    HStack(alignment: .top) {
-//                        Text("It's the")
-//                        Text("Elephant").strikethrough()
-//                        Text("Mastodon in the Room")
-//                    } .font(.caption)
-//                    
                     ExtractedView(selectedPhoto: $selectedPhoto, isCameraShowing: $isCameraShowing)
                         .sheet(isPresented: $isCameraShowing) {
                             //                        CameraView()
@@ -74,18 +68,13 @@ struct AddPersonView: View {
                             
                         }
                         .sheet(isPresented: $isShowingPolaroidMyInfoView) {
-                            //                            print("Got to MyInfoView")
                             PolaroidMyInfoView(image: $image, name: "Rob Lisenko", socialHandle: "@roblisenko@iosdev.space")
-                            
                         }
-                    
                 }
-                
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
-                        Text("IceBreaker 🐘").font(.largeTitle)
-                        
+                        Text("IceBreaker 🐘").font(.largeTitle)       
                     }
                 }
             }

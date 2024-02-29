@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ViewModel()
-    @StateObject var myInfo = ViewModel()
     
     @State private var tabselection = 0
     
@@ -28,10 +27,10 @@ struct ContentView: View {
                 .tag(1)
                 .environmentObject(viewModel)
             
-//            ExamplePizzaTimeView(tabselection: $tabselection)
-            ExamplePizzaTimeView()
+            AddPersonView(tabselection: $tabselection)
+//            ExamplePizzaTimeView()
                 .tabItem {
-                    Label("Pizza Time", systemImage: "fork.knife")
+                    Label("Add Person", systemImage: "person.fill.badge.plus")
                 }
                 .tag(2)
                 .environmentObject(viewModel)

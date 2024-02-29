@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MyTabBarButtonTest: View {
     @StateObject var viewModel = ViewModel()
+    @State private var image: Image?
+    
     @State var selectedTab: IceBreakersTab = .people
     @State var color: Color = .blue
     
@@ -25,6 +27,7 @@ struct MyTabBarButtonTest: View {
                         .environmentObject(viewModel)
                 case .trivia:
                     ExampleTrivia()
+//                           AddPersonView(tabselection: $tabselection)
                         .environmentObject(viewModel)
                 }
             }
@@ -45,10 +48,10 @@ struct MyTabBarButtonTest: View {
                             //Blur effect (attempt)
                             Rectangle()
                                 .fill(Color.clear)
-                                .background(
-                                    Color.blue.opacity(0.4)
-                                        .blur(radius: 20)
-                                )
+//                                .background(
+//                                    Color.blue.opacity(0.4)
+//                                        .blur(radius: 20)
+//                                )
                             //Tab's background and border
                             Rectangle()
                                 .frame(width: 75, height: 75)
@@ -67,9 +70,7 @@ struct MyTabBarButtonTest: View {
                                 .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
                             // Symbol and label
                             VStack(spacing: 5) {
-                                
                                 ZStack {
-                                    
                                     Image(systemName: item.icon)
                                         .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.8))
                                         .symbolVariant(.fill)

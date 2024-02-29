@@ -37,9 +37,6 @@ struct EnterNameSheet: View {
                         .foregroundColor(Color("ClearBlue"))
                     
                     VStack {
-//                        Text("Search for Their Mastodon")
-//                        Text("username and instance")
-//                            .foregroundColor(Color.white)
                         TextField("", text: $socialHandle)
                             .placeholder(when: socialHandle.isEmpty) {
                                 Text("Mastodon Username")
@@ -55,8 +52,7 @@ struct EnterNameSheet: View {
                     }
                     .padding(10)
                 }
-//                .frame(width: 300, height: 50)
-                .padding(20)
+                .padding(30)
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
@@ -78,9 +74,7 @@ struct EnterNameSheet: View {
                     }
                     .padding(10)
                 }
-//                .frame(width: 300, height: 20)
-                
-                .padding(20)
+                .padding(30)
                 
                 NavigationLink {
                     PolaroidDetailView(image: image!, name: name, socialHandle: socialHandle, doneSaving: $doneSaving)
@@ -99,16 +93,16 @@ struct EnterNameSheet: View {
 //                    .background(Capsule().stroke(.yellow, lineWidth: 2))
                     .background(Capsule().fill(Color("Gamboge")))
                     .padding()
-                    
-                    
                 }
-                .padding([.horizontal, .bottom])
+//                .padding([.bottom])
+            
                 .onChange(of: doneSaving) { newValue in
                     guard newValue == true else { return }
                     dismiss()
                 }
         }
         .preferredColorScheme(.dark)
+        
     }
 }
 
