@@ -42,12 +42,14 @@ struct MyTabBarButtonTest: View {
                         
                     } label: {
                         ZStack {
+                            //Blur effect (attempt)
                             Rectangle()
                                 .fill(Color.clear)
                                 .background(
                                     Color.blue.opacity(0.4)
                                         .blur(radius: 20)
                                 )
+                            //Tab's background and border
                             Rectangle()
                                 .frame(width: 75, height: 75)
                                 .cornerRadius(7)
@@ -62,14 +64,20 @@ struct MyTabBarButtonTest: View {
                                             lineWidth: 2
                                         )
                                 )
-                                .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: -10)
+                                .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
+                            // Symbol and label
                             VStack(spacing: 5) {
-                                Image(systemName: item.icon)
-                                    .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
-                                    .symbolVariant(.fill)
-                                    .font(.largeTitle)
-                                //                                    .stroke(Color.black)
+                                
+                                ZStack {
+                                    
+                                    Image(systemName: item.icon)
+                                        .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.8))
+                                        .symbolVariant(.fill)
+                                        .font(.largeTitle)
+                                        .shadow(color: .black.opacity(0.6), radius: 2)
                                     .frame(width: 50, height: 40)
+                                }
+                                
                                 Text(item.text)
                                     .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
                                     .font(.caption.bold())
