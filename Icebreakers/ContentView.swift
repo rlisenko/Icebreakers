@@ -38,7 +38,7 @@ struct ContentView: View {
 //            ExampleTrivia(tabselection: $tabselection)
             ExampleTrivia()
                 .tabItem {
-                    Label("Trivia", systemImage: "graduationcap")
+                    Label("TBD", systemImage: "graduationcap")
                 }
                 .tag(3)
                 .environmentObject(viewModel)
