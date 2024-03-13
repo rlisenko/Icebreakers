@@ -18,7 +18,7 @@ struct MyTabBarButtonTest: View {
             Group {
                 switch selectedTab {
                 case .people:
-                    ExamplePeopleView()
+                    ExamplePeopleView(isCameraShowing: false)
                 case .pizza:
                     ExamplePizzaTimeView()
                 case .trivia:

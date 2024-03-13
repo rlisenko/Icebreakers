@@ -10,6 +10,10 @@ import SwiftUI
 import Observation
 
 struct ExamplePeopleView: View {
+
+    @State var isCameraShowing: Bool
+    @State private var selectedImage: UIImage?
+
     @EnvironmentObject var viewModel: ViewModel
     
     let columns = [
@@ -29,6 +33,7 @@ struct ExamplePeopleView: View {
                     Spacer(minLength: 20)
                     Button(action: {
                         // action to perform on tap
+                        isCameraShowing = true
                     }) {
                         ZStack {
                             Image(systemName: "camera.shutter.button")
@@ -108,13 +113,16 @@ struct ExamplePeopleView: View {
                 }
             }
         }
+        .fullScreenCover(isPresented: self.$isCameraShowing) {
+            AccessCameraView(selectedImage: self.$selectedImage)
+        }
     }
 }
 
 struct ExamplePeopleView_Previews: PreviewProvider {
 
     static var previews: some View {
-        ExamplePeopleView()
+        ExamplePeopleView(isCameraShowing: false)
             .environmentObject(ViewModel())
     }
 }
