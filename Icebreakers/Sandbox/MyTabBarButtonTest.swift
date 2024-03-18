@@ -48,16 +48,12 @@ struct MyTabBarButtonTest: View {
                             //Blur effect (attempt)
                             Rectangle()
                                 .fill(Color.clear)
-//                                .background(
-//                                    Color.blue.opacity(0.4)
-//                                        .blur(radius: 20)
-//                                )
                             //Tab's background and border
                             Rectangle()
                                 .frame(width: 75, height: 75)
-                                .cornerRadius(7)
+                                .cornerRadius(15)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 7)
+                                    RoundedRectangle(cornerRadius: 15)
                                         .strokeBorder(
                                             LinearGradient(
                                                 gradient: Gradient(colors: [Color("Lavender").opacity(0.6), .black.opacity(0.5)]),
