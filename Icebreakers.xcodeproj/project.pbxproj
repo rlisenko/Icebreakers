@@ -10,6 +10,7 @@
 		5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */; };
 		5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B02B88E50D004DDFB7 /* Tab.swift */; };
 		5715C4B32B88E520004DDFB7 /* MyTabBarButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */; };
+		571E445E2BA8697D00B5F754 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E445D2BA8697D00B5F754 /* AccessCameraView.swift */; };
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
 		574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */; };
 		574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* ExampleTrivia.swift */; };
@@ -83,6 +84,7 @@
 		5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolStroke.swift; sourceTree = "<group>"; };
 		5715C4B02B88E50D004DDFB7 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarButtonTest.swift; sourceTree = "<group>"; };
+		571E445D2BA8697D00B5F754 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePizzaTimeView.swift; sourceTree = "<group>"; };
 		574C06272B86509A00B5ED6F /* ExampleTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTrivia.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				57D63B8E29F6BBC000ED89EB /* Info.plist */,
+				571E445D2BA8697D00B5F754 /* AccessCameraView.swift */,
 				57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */,
 				57F3D15A29E98CA3005A18DD /* ContentView.swift */,
 				57F3D14629E98CA3005A18DD /* AddPersonView.swift */,
@@ -397,6 +400,7 @@
 				57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */,
 				57DAA88329F81E8200D68F7C /* MultisheetTest.swift in Sources */,
 				57F3D16329E98CA3005A18DD /* FileManager-DocDir.swift in Sources */,
+				571E445E2BA8697D00B5F754 /* AccessCameraView.swift in Sources */,
 				57DAA88529F8270400D68F7C /* SharesheetTest.swift in Sources */,
 				57F3D17329E98CA3005A18DD /* ContentView.swift in Sources */,
 				574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */,
