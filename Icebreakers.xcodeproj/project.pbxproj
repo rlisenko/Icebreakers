@@ -447,7 +447,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N76WE33BQK;
+				DEVELOPMENT_TEAM = 65C9KYKM98;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariMastodon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
@@ -477,7 +477,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N76WE33BQK;
+				DEVELOPMENT_TEAM = 65C9KYKM98;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariMastodon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
@@ -625,7 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
-				DEVELOPMENT_TEAM = N76WE33BQK;
+				DEVELOPMENT_TEAM = 65C9KYKM98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
@@ -660,7 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
-				DEVELOPMENT_TEAM = N76WE33BQK;
+				DEVELOPMENT_TEAM = 65C9KYKM98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;

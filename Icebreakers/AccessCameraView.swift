@@ -18,6 +18,7 @@ struct AccessCameraView: UIViewControllerRepresentable {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = true
+//        imagePicker.preferredContentSize(
         imagePicker.delegate = context.coordinator
         return imagePicker
     }
