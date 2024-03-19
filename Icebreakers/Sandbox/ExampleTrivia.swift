@@ -25,8 +25,6 @@ struct ExampleTrivia: View {
                 VStack {
                     Spacer(minLength: 20)
                                         
-                    Text("Indie Dev Day 1") //this needs to reference a date field in model that could be sorted somehow
-                        .foregroundStyle(.gray)
                     ScrollView {
                         
                         ForEach(viewModel.people) { person in
@@ -61,15 +59,8 @@ struct ExampleTrivia: View {
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .principal) {
-                            Text("Trivia 🎓").font(.largeTitle)
+                            Text("Take Our Selfie 🤳").font(.largeTitle)
                             
-                        }
-                        ToolbarItem {
-                            Button(action: {
-//Preferences sheet
-                            }, label: {
-                                Label("Settings", systemImage: "gearshape")
-                            })
                         }
                     }
                 }

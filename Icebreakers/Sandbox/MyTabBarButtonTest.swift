@@ -23,7 +23,8 @@ struct MyTabBarButtonTest: View {
                     ExamplePeopleView()
                         .environmentObject(viewModel)
                 case .pizza:
-                    AccessCameraView()
+                    ExampleTrivia()
+                    //                    AccessCameraView()
                         .environmentObject(viewModel)
                 case .trivia:
                     ExampleTrivia()
