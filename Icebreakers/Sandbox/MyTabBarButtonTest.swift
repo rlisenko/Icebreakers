@@ -46,9 +46,6 @@ struct MyTabBarButtonTest: View {
                         
                     } label: {
                         ZStack {
-                            //Blur effect (attempt)
-                            Rectangle()
-                                .fill(Color.clear)
                             //Tab's background and border
                             Rectangle()
                                 .frame(width: 75, height: 75)
@@ -92,9 +89,6 @@ struct MyTabBarButtonTest: View {
             .padding(.top, 14)
             .padding(.bottom, 25)
             .frame(height: 110, alignment: .top)
-            
-            //            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
-            //            .strokeStyle(cornerRadius: 34)
             .background(.thickMaterial)
             .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea()

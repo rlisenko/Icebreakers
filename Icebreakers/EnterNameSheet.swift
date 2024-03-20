@@ -31,29 +31,46 @@ struct EnterNameSheet: View {
                         .padding(.bottom, 60)
                 }
                 
-                
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .foregroundColor(Color("ClearBlue"))
+                VStack {
+                    Text("Mastodon Handle")
+                        .font(.body)
+                        .fontWeight(.bold)
                     
-                    VStack {
-                        TextField("", text: $socialHandle)
-                            .placeholder(when: socialHandle.isEmpty) {
-                                Text("Mastodon Username")
-                                    .padding(10)
-                                    .foregroundColor(Color("ClearBlue"))
-                                    .background(.white)
-                                    .italic()
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                                
-                            }
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
+                    ZStack {
+                        Rectangle()
+                            .frame(width: .infinity, height: 45)
+                            .cornerRadius(15)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            gradient: Gradient(colors: [Color("Lavender").opacity(0.6), .black.opacity(0.5)]),
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ),
+                                        lineWidth: 2
+                                    )
+                            )
+                        VStack {
+                            TextField("", text: $socialHandle)
+                            //                            .placeholder(when: socialHandle.isEmpty) {
+                            //                                Text("Mastodon Username")
+                            //                                    .padding(10)
+                            //                                    .foregroundColor(Color("ClearBlue"))
+                            //                                    .background(.white)
+                            //                                    .italic()
+                            //                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                            //
+                            //                            }
+                            //                            .foregroundColor(.white)
+                            //                            .fontWeight(.bold)
+                        }
+                        .padding(10)
+                        
                     }
-                    .padding(10)
+                    .foregroundStyle(.white.opacity(0.3))
+                    .padding(30)
                 }
-                .padding(30)
-                
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundColor(Color("bluishGreen"))
