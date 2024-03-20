@@ -62,7 +62,7 @@ struct EnterNameSheet: View {
                             //                                    .clipShape(RoundedRectangle(cornerRadius: 10))
                             //
                             //                            }
-                            //                            .foregroundColor(.white)
+                                                        .foregroundColor(.white)
                             //                            .fontWeight(.bold)
                         }
                         .padding(10)
