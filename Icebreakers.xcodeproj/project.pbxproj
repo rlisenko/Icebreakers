@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */; };
 		5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B02B88E50D004DDFB7 /* Tab.swift */; };
-		5715C4B32B88E520004DDFB7 /* MyTabBarButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */; };
+		5715C4B32B88E520004DDFB7 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B22B88E520004DDFB7 /* MyTabBar.swift */; };
 		571E445E2BA8697D00B5F754 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E445D2BA8697D00B5F754 /* AccessCameraView.swift */; };
 		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
 		574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */; };
-		574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* ExampleTrivia.swift */; };
+		574C06282B86509A00B5ED6F /* TakePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* TakePicView.swift */; };
 		576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */; };
 		576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */; };
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
@@ -53,7 +53,7 @@
 		57F3D17329E98CA3005A18DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15A29E98CA3005A18DD /* ContentView.swift */; };
 		57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15B29E98CA3005A18DD /* ImageSaver.swift */; };
 		57F3D17829E98D95005A18DD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D17729E98D95005A18DD /* Person.swift */; };
-		57F8F1E12B7E7275002D6115 /* ExamplePeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F1E02B7E7275002D6115 /* ExamplePeopleView.swift */; };
+		57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F1E02B7E7275002D6115 /* PeopleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +83,11 @@
 /* Begin PBXFileReference section */
 		5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolStroke.swift; sourceTree = "<group>"; };
 		5715C4B02B88E50D004DDFB7 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
-		5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarButtonTest.swift; sourceTree = "<group>"; };
+		5715C4B22B88E520004DDFB7 /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		571E445D2BA8697D00B5F754 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
 		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
 		574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePizzaTimeView.swift; sourceTree = "<group>"; };
-		574C06272B86509A00B5ED6F /* ExampleTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTrivia.swift; sourceTree = "<group>"; };
+		574C06272B86509A00B5ED6F /* TakePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicView.swift; sourceTree = "<group>"; };
 		576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDFaceID.swift; sourceTree = "<group>"; };
 		576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsYourAppActive.swift; sourceTree = "<group>"; };
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		57F3D15A29E98CA3005A18DD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57F3D15B29E98CA3005A18DD /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		57F3D17729E98D95005A18DD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		57F8F1E02B7E7275002D6115 /* ExamplePeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePeopleView.swift; sourceTree = "<group>"; };
+		57F8F1E02B7E7275002D6115 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,13 +184,9 @@
 				57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */,
 				57DAA88429F8270400D68F7C /* SharesheetTest.swift */,
 				5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */,
-				57F8F1E02B7E7275002D6115 /* ExamplePeopleView.swift */,
 				574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */,
-				574C06272B86509A00B5ED6F /* ExampleTrivia.swift */,
 				576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */,
 				576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */,
-				5715C4B02B88E50D004DDFB7 /* Tab.swift */,
-				5715C4B22B88E520004DDFB7 /* MyTabBarButtonTest.swift */,
 				5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */,
 			);
 			path = Sandbox;
@@ -227,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				57D63B8E29F6BBC000ED89EB /* Info.plist */,
-				571E445D2BA8697D00B5F754 /* AccessCameraView.swift */,
 				57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */,
+				571E445D2BA8697D00B5F754 /* AccessCameraView.swift */,
 				57F3D15A29E98CA3005A18DD /* ContentView.swift */,
 				57F3D14629E98CA3005A18DD /* AddPersonView.swift */,
 				57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */,
@@ -239,6 +235,10 @@
 				57F3D14829E98CA3005A18DD /* FileManager-DocDir.swift */,
 				57F3D14529E98CA3005A18DD /* ImagePicker.swift */,
 				57F3D15B29E98CA3005A18DD /* ImageSaver.swift */,
+				57F8F1E02B7E7275002D6115 /* PeopleView.swift */,
+				574C06272B86509A00B5ED6F /* TakePicView.swift */,
+				5715C4B22B88E520004DDFB7 /* MyTabBar.swift */,
+				5715C4B02B88E50D004DDFB7 /* Tab.swift */,
 				57F3D14D29E98CA3005A18DD /* Model */,
 				57D63B8F29F6BD7500ED89EB /* Sandbox */,
 				57F3D15029E98CA3005A18DD /* SwiftCamera */,
@@ -403,7 +403,7 @@
 				571E445E2BA8697D00B5F754 /* AccessCameraView.swift in Sources */,
 				57DAA88529F8270400D68F7C /* SharesheetTest.swift in Sources */,
 				57F3D17329E98CA3005A18DD /* ContentView.swift in Sources */,
-				574C06282B86509A00B5ED6F /* ExampleTrivia.swift in Sources */,
+				574C06282B86509A00B5ED6F /* TakePicView.swift in Sources */,
 				57F3D16A29E98CA3005A18DD /* CameraService+Extensions.swift in Sources */,
 				57F3D16029E98CA3005A18DD /* ImagePicker.swift in Sources */,
 				576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */,
@@ -411,10 +411,10 @@
 				57F3D17229E98CA3005A18DD /* ListBuddyView.swift in Sources */,
 				57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */,
 				57F3D16B29E98CA3005A18DD /* CameraPreview.swift in Sources */,
-				57F8F1E12B7E7275002D6115 /* ExamplePeopleView.swift in Sources */,
+				57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */,
 				57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */,
 				57D4C33329F2C151004AA9E5 /* EnterNameSheet.swift in Sources */,
-				5715C4B32B88E520004DDFB7 /* MyTabBarButtonTest.swift in Sources */,
+				5715C4B32B88E520004DDFB7 /* MyTabBar.swift in Sources */,
 				57F3D16229E98CA3005A18DD /* PolaroidDetailView.swift in Sources */,
 				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,
 				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
@@ -555,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -610,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -633,6 +633,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access camera for you to take selfies, is that ok?";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -667,6 +668,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Icebreakers/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access camera for you to take selfies, is that ok?";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

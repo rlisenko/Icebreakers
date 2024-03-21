@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyTabBarButtonTest: View {
+struct MyTabBar: View {
     @StateObject var viewModel = ViewModel()
     @State private var image: Image?
     
@@ -20,14 +20,13 @@ struct MyTabBarButtonTest: View {
             Group {
                 switch selectedTab {
                 case .people:
-                    ExamplePeopleView()
+                    PeopleView()
                         .environmentObject(viewModel)
                 case .pizza:
-                    ExampleTrivia()
-                    //                    AccessCameraView()
+                    TakePicView()
                         .environmentObject(viewModel)
                 case .trivia:
-                    ExampleTrivia()
+                    TakePicView()
 //                           AddPersonView(tabselection: $tabselection)
                         .environmentObject(viewModel)
                 }
@@ -98,6 +97,6 @@ struct MyTabBarButtonTest: View {
 }
 
 #Preview {
-    MyTabBarButtonTest()
+    MyTabBar()
         .environmentObject(ViewModel())
 }

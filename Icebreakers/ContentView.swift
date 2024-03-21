@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $tabselection) {
-            ExamplePeopleView()
+            PeopleView()
 //            TouchIDFaceID()
                 .tabItem {
                     Label {
@@ -36,7 +36,7 @@ struct ContentView: View {
                 .environmentObject(viewModel)
             
 //            ExampleTrivia(tabselection: $tabselection)
-            ExampleTrivia()
+            TakePicView()
                 .tabItem {
                     Label("TBD", systemImage: "graduationcap")
                 }

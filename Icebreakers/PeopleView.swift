@@ -9,7 +9,7 @@ import CoreImage
 import SwiftUI
 import Observation
 
-struct ExamplePeopleView: View {
+struct PeopleView: View {
     @EnvironmentObject var viewModel: ViewModel
     
     let columns = [
@@ -119,10 +119,10 @@ struct ExamplePeopleView: View {
     }
 }
 
-struct ExamplePeopleView_Previews: PreviewProvider {
+struct PeopleView_Previews: PreviewProvider {
 
     static var previews: some View {
-        ExamplePeopleView()
+        PeopleView()
             .environmentObject(ViewModel())
     }
 }

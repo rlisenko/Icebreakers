@@ -21,13 +21,20 @@ struct EnterNameSheet: View {
     var body: some View {
         NavigationView {
             VStack {
+                Picker(selection: /*@START_MENU_TOKEN@*/.constant(1)/*@END_MENU_TOKEN@*/, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
+                    Text("Capture Their Info").tag(1)
+                    Text("Send With My Info").tag(2)
+                }
+                .pickerStyle(.segmented)
                 ZStack {
                     //these do not need to be full size, would free up more space to fit onscreen keyboard
                     Image("polaroidstockphoto")
+                        .resizable()
+                        .frame(width: 180, height: 200)
                     image?
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 305, height: 305)
+                        .frame(width: 150, height: 150)
                         .padding(.bottom, 60)
                 }
                 
@@ -53,15 +60,6 @@ struct EnterNameSheet: View {
                             )
                         VStack {
                             TextField("", text: $socialHandle)
-                            //                            .placeholder(when: socialHandle.isEmpty) {
-                            //                                Text("Mastodon Username")
-                            //                                    .padding(10)
-                            //                                    .foregroundColor(Color("ClearBlue"))
-                            //                                    .background(.white)
-                            //                                    .italic()
-                            //                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                            //
-                            //                            }
                                                         .foregroundColor(.white)
                             //                            .fontWeight(.bold)
                         }
@@ -93,23 +91,23 @@ struct EnterNameSheet: View {
                 }
                 .padding(30)
                 
-                NavigationLink {
-                    PolaroidDetailView(image: image!, name: name, socialHandle: socialHandle, doneSaving: $doneSaving)
-                } label: {
-                        
-                        HStack {
-                            Spacer()
-                            Text("Add To Picture")
-                            Spacer()
-                        }
-                        .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
-                    }
-                    .disabled(image == nil)
-                    .font(.system(.title2, design: .rounded, weight: .bold))
-                    .foregroundColor(.white)
-//                    .background(Capsule().stroke(.yellow, lineWidth: 2))
-                    .background(Capsule().fill(Color("Gamboge")))
-                    .padding()
+//                NavigationLink {
+//                    PolaroidDetailView(image: image!, name: name, socialHandle: socialHandle, doneSaving: $doneSaving)
+//                } label: {
+//                        
+//                        HStack {
+//                            Spacer()
+//                            Text("Add To Picture")
+//                            Spacer()
+//                        }
+//                        .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
+//                    }
+//                    .disabled(image == nil)
+//                    .font(.system(.title2, design: .rounded, weight: .bold))
+//                    .foregroundColor(.white)
+////                    .background(Capsule().stroke(.yellow, lineWidth: 2))
+//                    .background(Capsule().fill(Color("Gamboge")))
+//                    .padding()
                 }
 //                .padding([.bottom])
             
