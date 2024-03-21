@@ -18,6 +18,7 @@
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
 		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
 		57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */; };
+		57C32BDB2BAB7A830048D71D /* TakePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C32BDA2BAB7A830048D71D /* TakePicView.swift */; };
 		57D4C33329F2C151004AA9E5 /* EnterNameSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */; };
 		57D63B7429F6BB9B00ED89EB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */; };
 		57D63B7729F6BB9B00ED89EB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7629F6BB9B00ED89EB /* _locales */; };
@@ -91,6 +92,7 @@
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
 		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
 		57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidDynamicRendering.swift; sourceTree = "<group>"; };
+		57C32BDA2BAB7A830048D71D /* TakePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicView.swift; sourceTree = "<group>"; };
 		57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameSheet.swift; sourceTree = "<group>"; };
 		57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariMastodon.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				57DAA88429F8270400D68F7C /* SharesheetTest.swift */,
 				5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */,
 				57F8F1E02B7E7275002D6115 /* ExamplePeopleView.swift */,
+				57C32BDA2BAB7A830048D71D /* TakePicView.swift */,
 				574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */,
 				574C06272B86509A00B5ED6F /* ExampleTrivia.swift */,
 				576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */,
@@ -420,6 +423,7 @@
 				57F3D16F29E98CA3005A18DD /* ImageResizer.swift in Sources */,
 				57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */,
 				57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */,
+				57C32BDB2BAB7A830048D71D /* TakePicView.swift in Sources */,
 				57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */,
 				576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */,
 				574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */,
@@ -552,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -606,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

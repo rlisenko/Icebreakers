@@ -114,6 +114,7 @@ struct ExamplePeopleView: View {
             }
         }
         .fullScreenCover(isPresented: self.$isCameraShowing) {
+            
             AccessCameraView(selectedImage: self.$selectedImage)
         }
     }
