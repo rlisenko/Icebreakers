@@ -12,8 +12,9 @@ struct IcebreakersApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()   
-            MyTabBar()
+//            MyTabBar()
 //            TakePicView()
+            EnterNameView()
         }
     }
 }

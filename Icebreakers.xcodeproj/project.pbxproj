@@ -19,7 +19,7 @@
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
 		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
 		57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */; };
-		57D4C33329F2C151004AA9E5 /* EnterNameSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */; };
+		57D4C33329F2C151004AA9E5 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4C33229F2C151004AA9E5 /* EnterNameView.swift */; };
 		57D63B7429F6BB9B00ED89EB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */; };
 		57D63B7729F6BB9B00ED89EB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7629F6BB9B00ED89EB /* _locales */; };
 		57D63B7929F6BB9B00ED89EB /* images in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7829F6BB9B00ED89EB /* images */; };
@@ -93,7 +93,7 @@
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
 		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
 		57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidDynamicRendering.swift; sourceTree = "<group>"; };
-		57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameSheet.swift; sourceTree = "<group>"; };
+		57D4C33229F2C151004AA9E5 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariMastodon.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		57D63B7629F6BB9B00ED89EB /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 				571E445D2BA8697D00B5F754 /* AccessCameraView.swift */,
 				57F3D15A29E98CA3005A18DD /* ContentView.swift */,
 				57F3D14629E98CA3005A18DD /* AddPersonView.swift */,
-				57D4C33229F2C151004AA9E5 /* EnterNameSheet.swift */,
+				57D4C33229F2C151004AA9E5 /* EnterNameView.swift */,
 				57F3D14729E98CA3005A18DD /* PolaroidDetailView.swift */,
 				57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */,
 				57F3D15929E98CA3005A18DD /* ListBuddyView.swift */,
@@ -413,7 +413,7 @@
 				57F3D16B29E98CA3005A18DD /* CameraPreview.swift in Sources */,
 				57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */,
 				57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */,
-				57D4C33329F2C151004AA9E5 /* EnterNameSheet.swift in Sources */,
+				57D4C33329F2C151004AA9E5 /* EnterNameView.swift in Sources */,
 				5715C4B32B88E520004DDFB7 /* MyTabBar.swift in Sources */,
 				57F3D16229E98CA3005A18DD /* PolaroidDetailView.swift in Sources */,
 				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,

@@ -13,7 +13,6 @@ struct TakePicView: View {
     @EnvironmentObject var viewModel: ViewModel
     
     @State private var isShowingAddView = false
-    @State private var image: Image?
     @State private var selectedImage: UIImage?
     
     var body: some View {
@@ -27,9 +26,16 @@ struct TakePicView: View {
                 VStack {
                     Spacer()
                     ZStack(alignment: .top) {
+                        
+//                        Spacer(minLength: 20)
+                        
                         AccessCameraView(selectedImage: self.$selectedImage)
                             .frame(width: 290, height: 475)
+//                        EnterNameSheet(image: $selectedImage)
                         Image("PolaroidClear")
+                        //                .frame(width: 400)
+                        
+                        
                             .navigationBarTitleDisplayMode(.inline)
                             .toolbar {
                                 ToolbarItem(placement: .principal) {
@@ -38,11 +44,6 @@ struct TakePicView: View {
                             }
                     }
                     Spacer()
-                    Button("Call EnterNameView") {
-                        image = Image("UnfrozenMasto")
-                        EnterNameView()
-                    }
-
                 }
             }
         }
