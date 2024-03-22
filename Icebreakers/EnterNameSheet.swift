@@ -19,8 +19,8 @@ struct EnterNameView: View {
     @FocusState private var isFocused: Bool
     @FocusState private var isNameFocused: Bool
     @FocusState private var keyboardFocused: Bool
-var selectedImage: UIImage?
-    @State private var image: Image? 
+    //    @Binding var image: Image?
+    @State private var image: Image? = Image("UnfrozenMasto")
     @State private var alternateText = "" // New state variable to store alternate text
     @State private var useAlternateText = false // Toggle state
     
@@ -52,14 +52,6 @@ var selectedImage: UIImage?
                         .scaledToFit()
                         .frame(width: 150, height: 150)
                         .padding(.bottom, 30)
-                    Text(socialHandle)
-                        .font(.custom("PermanentMarker-Regular", size: 12))
-                        .foregroundStyle(.black)
-                        .padding(.top, 145)
-                    Text(name)
-                        .font(.caption)
-                        .foregroundStyle(.black)
-                        .padding(.top, 175)
                 }
                 .padding()
                 //                }
@@ -148,6 +140,6 @@ struct EnterNameSheet_Previews: PreviewProvider {
     
     static var previews: some View {
         //        EnterNameView(image: $image)
-        EnterNameView(image: $image)
+        EnterNameView()
     }
 }

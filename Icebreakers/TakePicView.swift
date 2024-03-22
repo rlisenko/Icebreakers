@@ -38,11 +38,9 @@ struct TakePicView: View {
                             }
                     }
                     Spacer()
-                    Button("Call EnterNameView") {
-                        image = Image("UnfrozenMasto")
+                    NavigationLink("EnterNameViewing") {
                         EnterNameView()
                     }
-
                 }
             }
         }
