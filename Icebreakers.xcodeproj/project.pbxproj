@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		570885AB2BB1A6A40049ABFA /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570885AA2BB1A6A40049ABFA /* CustomBackButton.swift */; };
+		570885AD2BB1B79E0049ABFA /* MoreCustomNavBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570885AC2BB1B79E0049ABFA /* MoreCustomNavBars.swift */; };
+		570885AF2BB1B97B0049ABFA /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570885AE2BB1B97B0049ABFA /* ThirdView.swift */; };
+		5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */; };
+		5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B02B88E50D004DDFB7 /* Tab.swift */; };
+		5715C4B32B88E520004DDFB7 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715C4B22B88E520004DDFB7 /* MyTabBar.swift */; };
+		571E445E2BA8697D00B5F754 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E445D2BA8697D00B5F754 /* AccessCameraView.swift */; };
+		5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */; };
+		574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */; };
+		574C06282B86509A00B5ED6F /* TakePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* TakePicView.swift */; };
+		576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */; };
+		576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */; };
+		576F074C2BB3187900E59541 /* KavsoftCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F074B2BB3187900E59541 /* KavsoftCameraView.swift */; };
+		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
+		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
+		57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */; };
+		57D4C33329F2C151004AA9E5 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4C33229F2C151004AA9E5 /* EnterNameView.swift */; };
+		57D63B7429F6BB9B00ED89EB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */; };
+		57D63B7729F6BB9B00ED89EB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7629F6BB9B00ED89EB /* _locales */; };
+		57D63B7929F6BB9B00ED89EB /* images in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7829F6BB9B00ED89EB /* images */; };
+		57D63B7B29F6BB9B00ED89EB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7A29F6BB9B00ED89EB /* manifest.json */; };
+		57D63B7D29F6BB9B00ED89EB /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7C29F6BB9B00ED89EB /* background.js */; };
+		57D63B7F29F6BB9B00ED89EB /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B7E29F6BB9B00ED89EB /* content.js */; };
+		57D63B8129F6BB9B00ED89EB /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B8029F6BB9B00ED89EB /* popup.html */; };
+		57D63B8329F6BB9B00ED89EB /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B8229F6BB9B00ED89EB /* popup.css */; };
+		57D63B8529F6BB9B00ED89EB /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B8429F6BB9B00ED89EB /* popup.js */; };
+		57D63B8929F6BB9B00ED89EB /* SafariMastodon.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		57D63B9329F7055C00ED89EB /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B9129F7055B00ED89EB /* PermanentMarker-Regular.ttf */; };
+		57D63B9429F7055C00ED89EB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57D63B9229F7055B00ED89EB /* LICENSE.txt */; };
+		57DAA88329F81E8200D68F7C /* MultisheetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DAA88229F81E8200D68F7C /* MultisheetTest.swift */; };
+		57DAA88529F8270400D68F7C /* SharesheetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DAA88429F8270400D68F7C /* SharesheetTest.swift */; };
+		57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */; };
+		57F3D13A29E98C5F005A18DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F3D13929E98C5F005A18DD /* Assets.xcassets */; };
+		57F3D13D29E98C5F005A18DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F3D13C29E98C5F005A18DD /* Preview Assets.xcassets */; };
+		57F3D16029E98CA3005A18DD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D14529E98CA3005A18DD /* ImagePicker.swift */; };
+		57F3D16129E98CA3005A18DD /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D14629E98CA3005A18DD /* AddPersonView.swift */; };
+		57F3D16229E98CA3005A18DD /* PolaroidDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D14729E98CA3005A18DD /* PolaroidDetailView.swift */; };
+		57F3D16329E98CA3005A18DD /* FileManager-DocDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D14829E98CA3005A18DD /* FileManager-DocDir.swift */; };
+		57F3D16529E98CA3005A18DD /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D14A29E98CA3005A18DD /* ContentViewModel.swift */; };
+		57F3D16A29E98CA3005A18DD /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15129E98CA3005A18DD /* CameraService+Extensions.swift */; };
+		57F3D16B29E98CA3005A18DD /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15229E98CA3005A18DD /* CameraPreview.swift */; };
+		57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15329E98CA3005A18DD /* CameraService+Enums.swift */; };
+		57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15429E98CA3005A18DD /* PhotoCaptureProcessor.swift */; };
+		57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15529E98CA3005A18DD /* CameraView.swift */; };
+		57F3D16F29E98CA3005A18DD /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15629E98CA3005A18DD /* ImageResizer.swift */; };
+		57F3D17029E98CA3005A18DD /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15729E98CA3005A18DD /* CameraService.swift */; };
+		57F3D17229E98CA3005A18DD /* ListBuddyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15929E98CA3005A18DD /* ListBuddyView.swift */; };
+		57F3D17329E98CA3005A18DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15A29E98CA3005A18DD /* ContentView.swift */; };
+		57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15B29E98CA3005A18DD /* ImageSaver.swift */; };
+		57F3D17829E98D95005A18DD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D17729E98D95005A18DD /* Person.swift */; };
+		57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F1E02B7E7275002D6115 /* PeopleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57D63B8729F6BB9B00ED89EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F3D12A29E98C5F005A18DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D63B7029F6BB9B00ED89EB;
+			remoteInfo = SafariMastodon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57D63B8A29F6BB9B00ED89EB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				57D63B8929F6BB9B00ED89EB /* SafariMastodon.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		570885AA2BB1A6A40049ABFA /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		570885AC2BB1B79E0049ABFA /* MoreCustomNavBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCustomNavBars.swift; sourceTree = "<group>"; };
+		570885AE2BB1B97B0049ABFA /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolStroke.swift; sourceTree = "<group>"; };
+		5715C4B02B88E50D004DDFB7 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		5715C4B22B88E520004DDFB7 /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		571E445D2BA8697D00B5F754 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
+		5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPicker.swift; sourceTree = "<group>"; };
+		574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePizzaTimeView.swift; sourceTree = "<group>"; };
+		574C06272B86509A00B5ED6F /* TakePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicView.swift; sourceTree = "<group>"; };
+		576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDFaceID.swift; sourceTree = "<group>"; };
+		576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsYourAppActive.swift; sourceTree = "<group>"; };
+		576F074B2BB3187900E59541 /* KavsoftCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KavsoftCameraView.swift; sourceTree = "<group>"; };
+		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
+		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
+		57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidDynamicRendering.swift; sourceTree = "<group>"; };
+		57D4C33229F2C151004AA9E5 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
+		57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariMastodon.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		57D63B7629F6BB9B00ED89EB /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		57D63B7829F6BB9B00ED89EB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		57D63B7A29F6BB9B00ED89EB /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		57D63B7C29F6BB9B00ED89EB /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		57D63B7E29F6BB9B00ED89EB /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		57D63B8029F6BB9B00ED89EB /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		57D63B8229F6BB9B00ED89EB /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		57D63B8429F6BB9B00ED89EB /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		57D63B8629F6BB9B00ED89EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D63B8E29F6BBC000ED89EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		57D63B9129F7055B00ED89EB /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
+		57D63B9229F7055B00ED89EB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		57DAA88229F81E8200D68F7C /* MultisheetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultisheetTest.swift; sourceTree = "<group>"; };
+		57DAA88429F8270400D68F7C /* SharesheetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesheetTest.swift; sourceTree = "<group>"; };
+		57F3D13229E98C5F005A18DD /* Icebreakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icebreakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcebreakersApp.swift; sourceTree = "<group>"; };
+		57F3D13929E98C5F005A18DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57F3D13C29E98C5F005A18DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57F3D14529E98CA3005A18DD /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		57F3D14629E98CA3005A18DD /* AddPersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		57F3D14729E98CA3005A18DD /* PolaroidDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolaroidDetailView.swift; sourceTree = "<group>"; };
+		57F3D14829E98CA3005A18DD /* FileManager-DocDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-DocDir.swift"; sourceTree = "<group>"; };
+		57F3D14A29E98CA3005A18DD /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		57F3D15129E98CA3005A18DD /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Extensions.swift"; sourceTree = "<group>"; };
+		57F3D15229E98CA3005A18DD /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		57F3D15329E98CA3005A18DD /* CameraService+Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Enums.swift"; sourceTree = "<group>"; };
+		57F3D15429E98CA3005A18DD /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		57F3D15529E98CA3005A18DD /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		57F3D15629E98CA3005A18DD /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		57F3D15729E98CA3005A18DD /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		57F3D15929E98CA3005A18DD /* ListBuddyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBuddyView.swift; sourceTree = "<group>"; };
+		57F3D15A29E98CA3005A18DD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		57F3D15B29E98CA3005A18DD /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		57F3D17729E98D95005A18DD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		57F8F1E02B7E7275002D6115 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57D63B6E29F6BB9B00ED89EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F3D12F29E98C5F005A18DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57D63B7229F6BB9B00ED89EB /* SafariMastodon */ = {
+			isa = PBXGroup;
+			children = (
+				57D63B7329F6BB9B00ED89EB /* SafariWebExtensionHandler.swift */,
+				57D63B8629F6BB9B00ED89EB /* Info.plist */,
+				57D63B7529F6BB9B00ED89EB /* Resources */,
+			);
+			path = SafariMastodon;
+			sourceTree = "<group>";
+		};
+		57D63B7529F6BB9B00ED89EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57D63B7629F6BB9B00ED89EB /* _locales */,
+				57D63B7829F6BB9B00ED89EB /* images */,
+				57D63B7A29F6BB9B00ED89EB /* manifest.json */,
+				57D63B7C29F6BB9B00ED89EB /* background.js */,
+				57D63B7E29F6BB9B00ED89EB /* content.js */,
+				57D63B8029F6BB9B00ED89EB /* popup.html */,
+				57D63B8229F6BB9B00ED89EB /* popup.css */,
+				57D63B8429F6BB9B00ED89EB /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57D63B8F29F6BD7500ED89EB /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				57DAA88229F81E8200D68F7C /* MultisheetTest.swift */,
+				57BD7AE529F4225E000CB1C7 /* MajidExample.swift */,
+				57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */,
+				57DAA88429F8270400D68F7C /* SharesheetTest.swift */,
+				5725683029F9588500EB6707 /* SwiftUIPhotoPicker.swift */,
+				574C06252B8643E800B5ED6F /* ExamplePizzaTimeView.swift */,
+				576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */,
+				576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */,
+				5715B3752B8E1D4000A719CC /* SFSymbolStroke.swift */,
+				570885AA2BB1A6A40049ABFA /* CustomBackButton.swift */,
+				570885AC2BB1B79E0049ABFA /* MoreCustomNavBars.swift */,
+				576F074B2BB3187900E59541 /* KavsoftCameraView.swift */,
+				570885AE2BB1B97B0049ABFA /* ThirdView.swift */,
+			);
+			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		57D63B9029F7055B00ED89EB /* Permanent_Marker */ = {
+			isa = PBXGroup;
+			children = (
+				57D63B9129F7055B00ED89EB /* PermanentMarker-Regular.ttf */,
+				57D63B9229F7055B00ED89EB /* LICENSE.txt */,
+			);
+			path = Permanent_Marker;
+			sourceTree = "<group>";
+		};
+		57F3D12929E98C5F005A18DD = {
+			isa = PBXGroup;
+			children = (
+				57F3D13429E98C5F005A18DD /* Icebreakers */,
+				57D63B7229F6BB9B00ED89EB /* SafariMastodon */,
+				57F3D13329E98C5F005A18DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57F3D13329E98C5F005A18DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57F3D13229E98C5F005A18DD /* Icebreakers.app */,
+				57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F3D13429E98C5F005A18DD /* Icebreakers */ = {
+			isa = PBXGroup;
+			children = (
+				57D63B8E29F6BBC000ED89EB /* Info.plist */,
+				57F3D13529E98C5F005A18DD /* IcebreakersApp.swift */,
+				571E445D2BA8697D00B5F754 /* AccessCameraView.swift */,
+				57F3D15A29E98CA3005A18DD /* ContentView.swift */,
+				57F3D14629E98CA3005A18DD /* AddPersonView.swift */,
+				57D4C33229F2C151004AA9E5 /* EnterNameView.swift */,
+				57F3D14729E98CA3005A18DD /* PolaroidDetailView.swift */,
+				57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */,
+				57F3D15929E98CA3005A18DD /* ListBuddyView.swift */,
+				57F3D14A29E98CA3005A18DD /* ContentViewModel.swift */,
+				57F3D14829E98CA3005A18DD /* FileManager-DocDir.swift */,
+				57F3D14529E98CA3005A18DD /* ImagePicker.swift */,
+				57F3D15B29E98CA3005A18DD /* ImageSaver.swift */,
+				57F8F1E02B7E7275002D6115 /* PeopleView.swift */,
+				574C06272B86509A00B5ED6F /* TakePicView.swift */,
+				5715C4B22B88E520004DDFB7 /* MyTabBar.swift */,
+				5715C4B02B88E50D004DDFB7 /* Tab.swift */,
+				57F3D14D29E98CA3005A18DD /* Model */,
+				57D63B8F29F6BD7500ED89EB /* Sandbox */,
+				57F3D15029E98CA3005A18DD /* SwiftCamera */,
+				57F3D13929E98C5F005A18DD /* Assets.xcassets */,
+				57D63B9029F7055B00ED89EB /* Permanent_Marker */,
+				57F3D13B29E98C5F005A18DD /* Preview Content */,
+			);
+			path = Icebreakers;
+			sourceTree = "<group>";
+		};
+		57F3D13B29E98C5F005A18DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				57F3D13C29E98C5F005A18DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57F3D14D29E98CA3005A18DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57F3D17729E98D95005A18DD /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57F3D15029E98CA3005A18DD /* SwiftCamera */ = {
+			isa = PBXGroup;
+			children = (
+				57F3D15129E98CA3005A18DD /* CameraService+Extensions.swift */,
+				57F3D15229E98CA3005A18DD /* CameraPreview.swift */,
+				57F3D15329E98CA3005A18DD /* CameraService+Enums.swift */,
+				57F3D15429E98CA3005A18DD /* PhotoCaptureProcessor.swift */,
+				57F3D15529E98CA3005A18DD /* CameraView.swift */,
+				57F3D15629E98CA3005A18DD /* ImageResizer.swift */,
+				57F3D15729E98CA3005A18DD /* CameraService.swift */,
+			);
+			path = SwiftCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57D63B7029F6BB9B00ED89EB /* SafariMastodon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D63B8D29F6BB9B00ED89EB /* Build configuration list for PBXNativeTarget "SafariMastodon" */;
+			buildPhases = (
+				57D63B6D29F6BB9B00ED89EB /* Sources */,
+				57D63B6E29F6BB9B00ED89EB /* Frameworks */,
+				57D63B6F29F6BB9B00ED89EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariMastodon;
+			productName = SafariMastodon;
+			productReference = 57D63B7129F6BB9B00ED89EB /* SafariMastodon.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		57F3D13129E98C5F005A18DD /* Icebreakers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F3D14029E98C5F005A18DD /* Build configuration list for PBXNativeTarget "Icebreakers" */;
+			buildPhases = (
+				57F3D12E29E98C5F005A18DD /* Sources */,
+				57F3D12F29E98C5F005A18DD /* Frameworks */,
+				57F3D13029E98C5F005A18DD /* Resources */,
+				57D63B8A29F6BB9B00ED89EB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57D63B8829F6BB9B00ED89EB /* PBXTargetDependency */,
+			);
+			name = Icebreakers;
+			productName = Icebreakers;
+			productReference = 57F3D13229E98C5F005A18DD /* Icebreakers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57F3D12A29E98C5F005A18DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					57D63B7029F6BB9B00ED89EB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					57F3D13129E98C5F005A18DD = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 57F3D12D29E98C5F005A18DD /* Build configuration list for PBXProject "Icebreakers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57F3D12929E98C5F005A18DD;
+			productRefGroup = 57F3D13329E98C5F005A18DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57F3D13129E98C5F005A18DD /* Icebreakers */,
+				57D63B7029F6BB9B00ED89EB /* SafariMastodon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57D63B6F29F6BB9B00ED89EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D63B7D29F6BB9B00ED89EB /* background.js in Resources */,
+				57D63B8329F6BB9B00ED89EB /* popup.css in Resources */,
+				57D63B8129F6BB9B00ED89EB /* popup.html in Resources */,
+				57D63B7929F6BB9B00ED89EB /* images in Resources */,
+				57D63B7B29F6BB9B00ED89EB /* manifest.json in Resources */,
+				57D63B7729F6BB9B00ED89EB /* _locales in Resources */,
+				57D63B7F29F6BB9B00ED89EB /* content.js in Resources */,
+				57D63B8529F6BB9B00ED89EB /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F3D13029E98C5F005A18DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D63B9429F7055C00ED89EB /* LICENSE.txt in Resources */,
+				57F3D13D29E98C5F005A18DD /* Preview Assets.xcassets in Resources */,
+				57D63B9329F7055C00ED89EB /* PermanentMarker-Regular.ttf in Resources */,
+				57F3D13A29E98C5F005A18DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57D63B6D29F6BB9B00ED89EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D63B7429F6BB9B00ED89EB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F3D12E29E98C5F005A18DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */,
+				57DAA88329F81E8200D68F7C /* MultisheetTest.swift in Sources */,
+				57F3D16329E98CA3005A18DD /* FileManager-DocDir.swift in Sources */,
+				571E445E2BA8697D00B5F754 /* AccessCameraView.swift in Sources */,
+				57DAA88529F8270400D68F7C /* SharesheetTest.swift in Sources */,
+				57F3D17329E98CA3005A18DD /* ContentView.swift in Sources */,
+				574C06282B86509A00B5ED6F /* TakePicView.swift in Sources */,
+				57F3D16A29E98CA3005A18DD /* CameraService+Extensions.swift in Sources */,
+				57F3D16029E98CA3005A18DD /* ImagePicker.swift in Sources */,
+				576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */,
+				57F3D16529E98CA3005A18DD /* ContentViewModel.swift in Sources */,
+				576F074C2BB3187900E59541 /* KavsoftCameraView.swift in Sources */,
+				57F3D17229E98CA3005A18DD /* ListBuddyView.swift in Sources */,
+				57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */,
+				57F3D16B29E98CA3005A18DD /* CameraPreview.swift in Sources */,
+				57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */,
+				57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */,
+				57D4C33329F2C151004AA9E5 /* EnterNameView.swift in Sources */,
+				5715C4B32B88E520004DDFB7 /* MyTabBar.swift in Sources */,
+				57F3D16229E98CA3005A18DD /* PolaroidDetailView.swift in Sources */,
+				570885AD2BB1B79E0049ABFA /* MoreCustomNavBars.swift in Sources */,
+				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,
+				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
+				57F3D16F29E98CA3005A18DD /* ImageResizer.swift in Sources */,
+				57F3D16E29E98CA3005A18DD /* CameraView.swift in Sources */,
+				5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */,
+				57F3D16D29E98CA3005A18DD /* PhotoCaptureProcessor.swift in Sources */,
+				570885AB2BB1A6A40049ABFA /* CustomBackButton.swift in Sources */,
+				57F3D16C29E98CA3005A18DD /* CameraService+Enums.swift in Sources */,
+				570885AF2BB1B97B0049ABFA /* ThirdView.swift in Sources */,
+				576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */,
+				574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */,
+				57F3D16129E98CA3005A18DD /* AddPersonView.swift in Sources */,
+				57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */,
+				5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */,
+				5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */,
+				57F3D17029E98CA3005A18DD /* CameraService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57D63B8829F6BB9B00ED89EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D63B7029F6BB9B00ED89EB /* SafariMastodon */;
+			targetProxy = 57D63B8729F6BB9B00ED89EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		57D63B8B29F6BB9B00ED89EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65C9KYKM98;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariMastodon/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers.SafariMastodon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57D63B8C29F6BB9B00ED89EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65C9KYKM98;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariMastodon/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariMastodon;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers.SafariMastodon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57F3D13E29E98C5F005A18DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57F3D13F29E98C5F005A18DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57F3D14129E98C5F005A18DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
+				DEVELOPMENT_TEAM = 65C9KYKM98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Icebreakers/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access camera for you to take selfies, is that ok?";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57F3D14229E98C5F005A18DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Icebreakers/Preview Content\"";
+				DEVELOPMENT_TEAM = 65C9KYKM98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Icebreakers/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access camera for you to take selfies, is that ok?";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teleortho3d.Icebreakers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57D63B8D29F6BB9B00ED89EB /* Build configuration list for PBXNativeTarget "SafariMastodon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D63B8B29F6BB9B00ED89EB /* Debug */,
+				57D63B8C29F6BB9B00ED89EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F3D12D29E98C5F005A18DD /* Build configuration list for PBXProject "Icebreakers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F3D13E29E98C5F005A18DD /* Debug */,
+				57F3D13F29E98C5F005A18DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F3D14029E98C5F005A18DD /* Build configuration list for PBXNativeTarget "Icebreakers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F3D14129E98C5F005A18DD /* Debug */,
+				57F3D14229E98C5F005A18DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57F3D12A29E98C5F005A18DD /* Project object */;
+}
