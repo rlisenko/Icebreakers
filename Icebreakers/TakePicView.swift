@@ -27,9 +27,13 @@ struct TakePicView: View {
                 VStack {
                     Spacer()
                     ZStack(alignment: .top) {
-                        AccessCameraView(selectedImage: self.$selectedImage)
-                            .frame(width: 290, height: 475)
+//                        AccessCameraView(selectedImage: self.$selectedImage)
+                        CameraView()
+                            .frame(width: 350, height: 600)
                         Image("PolaroidClear")
+                            .resizable()
+                            .frame(width: 300,height: 410)
+                                   
                             .navigationBarTitleDisplayMode(.inline)
                             .toolbar {
                                 ToolbarItem(placement: .principal) {
@@ -40,7 +44,8 @@ struct TakePicView: View {
                     Spacer()
                     VStack {
                         NavigationLink("EnterNameViewing") {
-                            EnterNameView()
+//                            EnterNameView()
+                            EnterNameView(image: $image)
                         }
                     }
                 }

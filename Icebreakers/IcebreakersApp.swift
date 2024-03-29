@@ -15,7 +15,6 @@ struct IcebreakersApp: App {
 //            MyTabBar()
             TakePicView()
 //            EnterNameView()
-//            KavsoftCameraView()
         }
     }
 }

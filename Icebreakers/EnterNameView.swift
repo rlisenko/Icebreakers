@@ -20,8 +20,8 @@ struct EnterNameView: View {
     @FocusState private var isFocused: Bool
     @FocusState private var isNameFocused: Bool
     @FocusState private var keyboardFocused: Bool
-    var selectedImage: UIImage?
-    @State private var image: Image?
+//    var selectedImage: UIImage?
+    @Binding var image: Image?
     @State private var alternateText = "" // New state variable to store alternate text
     @State private var useAlternateText = false // Toggle state
     
@@ -162,7 +162,7 @@ struct EnterNameSheet_Previews: PreviewProvider {
     @State private static var image: Image? = Image("UnfrozenMasto")
     
     static var previews: some View {
-        //        EnterNameView(image: $image)
-        EnterNameView()
+                EnterNameView(image: $image)
+//        EnterNameView()
     }
 }
