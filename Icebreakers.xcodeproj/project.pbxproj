@@ -19,6 +19,10 @@
 		574C06282B86509A00B5ED6F /* TakePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* TakePicView.swift */; };
 		576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */; };
 		576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */; };
+		57AD1DCC2BBB03B6009F3BA5 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DC82BBB03B6009F3BA5 /* CameraViewModel.swift */; };
+		57AD1DCD2BBB03B6009F3BA5 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DC92BBB03B6009F3BA5 /* CameraPreview.swift */; };
+		57AD1DCE2BBB03B6009F3BA5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DCA2BBB03B6009F3BA5 /* CameraManager.swift */; };
+		57AD1DCF2BBB03B6009F3BA5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DCB2BBB03B6009F3BA5 /* CameraView.swift */; };
 		57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */; };
 		57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE529F4225E000CB1C7 /* MajidExample.swift */; };
 		57BD7AE829F423FB000CB1C7 /* MajidDynamicRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */; };
@@ -50,10 +54,6 @@
 		57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D15B29E98CA3005A18DD /* ImageSaver.swift */; };
 		57F3D17829E98D95005A18DD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3D17729E98D95005A18DD /* Person.swift */; };
 		57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F1E02B7E7275002D6115 /* PeopleView.swift */; };
-		57FA63942BB7017400D59697 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA63902BB7017300D59697 /* CameraView.swift */; };
-		57FA63952BB7017400D59697 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA63912BB7017400D59697 /* CameraViewModel.swift */; };
-		57FA63962BB7017400D59697 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA63922BB7017400D59697 /* CameraPreview.swift */; };
-		57FA63972BB7017400D59697 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA63932BB7017400D59697 /* CameraManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +93,10 @@
 		574C06272B86509A00B5ED6F /* TakePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicView.swift; sourceTree = "<group>"; };
 		576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDFaceID.swift; sourceTree = "<group>"; };
 		576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsYourAppActive.swift; sourceTree = "<group>"; };
+		57AD1DC82BBB03B6009F3BA5 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		57AD1DC92BBB03B6009F3BA5 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		57AD1DCA2BBB03B6009F3BA5 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		57AD1DCB2BBB03B6009F3BA5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		57B676AC29FC0417007724EF /* PolaroidMyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidMyInfoView.swift; sourceTree = "<group>"; };
 		57BD7AE529F4225E000CB1C7 /* MajidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidExample.swift; sourceTree = "<group>"; };
 		57BD7AE729F423FB000CB1C7 /* MajidDynamicRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajidDynamicRendering.swift; sourceTree = "<group>"; };
@@ -127,10 +131,6 @@
 		57F3D15B29E98CA3005A18DD /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		57F3D17729E98D95005A18DD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		57F8F1E02B7E7275002D6115 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
-		57FA63902BB7017300D59697 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		57FA63912BB7017400D59697 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
-		57FA63922BB7017400D59697 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
-		57FA63932BB7017400D59697 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +151,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57AD1DD02BBB044A009F3BA5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				57AD1DCB2BBB03B6009F3BA5 /* CameraView.swift */,
+				57AD1DCA2BBB03B6009F3BA5 /* CameraManager.swift */,
+				57AD1DC92BBB03B6009F3BA5 /* CameraPreview.swift */,
+				57AD1DC82BBB03B6009F3BA5 /* CameraViewModel.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		57D63B7229F6BB9B00ED89EB /* SafariMastodon */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +253,7 @@
 				574C06272B86509A00B5ED6F /* TakePicView.swift */,
 				5715C4B22B88E520004DDFB7 /* MyTabBar.swift */,
 				5715C4B02B88E50D004DDFB7 /* Tab.swift */,
-				57FA63872BB7001900D59697 /* Camera */,
+				57AD1DD02BBB044A009F3BA5 /* Camera */,
 				57F3D14D29E98CA3005A18DD /* Model */,
 				57D63B8F29F6BD7500ED89EB /* Sandbox */,
 				57F3D13929E98C5F005A18DD /* Assets.xcassets */,
@@ -266,17 +277,6 @@
 				57F3D17729E98D95005A18DD /* Person.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		57FA63872BB7001900D59697 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				57FA63902BB7017300D59697 /* CameraView.swift */,
-				57FA63932BB7017400D59697 /* CameraManager.swift */,
-				57FA63922BB7017400D59697 /* CameraPreview.swift */,
-				57FA63912BB7017400D59697 /* CameraViewModel.swift */,
-			);
-			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,8 +408,6 @@
 				576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */,
 				57F3D16529E98CA3005A18DD /* ContentViewModel.swift in Sources */,
 				57F3D17229E98CA3005A18DD /* ListBuddyView.swift in Sources */,
-				57FA63972BB7017400D59697 /* CameraManager.swift in Sources */,
-				57FA63942BB7017400D59697 /* CameraView.swift in Sources */,
 				57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */,
 				57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */,
 				57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */,
@@ -417,19 +415,21 @@
 				5715C4B32B88E520004DDFB7 /* MyTabBar.swift in Sources */,
 				57F3D16229E98CA3005A18DD /* PolaroidDetailView.swift in Sources */,
 				570885AD2BB1B79E0049ABFA /* MoreCustomNavBars.swift in Sources */,
+				57AD1DCF2BBB03B6009F3BA5 /* CameraView.swift in Sources */,
+				57AD1DCE2BBB03B6009F3BA5 /* CameraManager.swift in Sources */,
 				57B676AD29FC0417007724EF /* PolaroidMyInfoView.swift in Sources */,
 				57F3D17829E98D95005A18DD /* Person.swift in Sources */,
-				57FA63962BB7017400D59697 /* CameraPreview.swift in Sources */,
+				57AD1DCD2BBB03B6009F3BA5 /* CameraPreview.swift in Sources */,
 				5715B3762B8E1D4000A719CC /* SFSymbolStroke.swift in Sources */,
 				570885AB2BB1A6A40049ABFA /* CustomBackButton.swift in Sources */,
 				570885AF2BB1B97B0049ABFA /* ThirdView.swift in Sources */,
+				57AD1DCC2BBB03B6009F3BA5 /* CameraViewModel.swift in Sources */,
 				576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */,
 				574C06262B8643E800B5ED6F /* ExamplePizzaTimeView.swift in Sources */,
 				57F3D16129E98CA3005A18DD /* AddPersonView.swift in Sources */,
 				57F3D17429E98CA3005A18DD /* ImageSaver.swift in Sources */,
 				5715C4B12B88E50D004DDFB7 /* Tab.swift in Sources */,
 				5725683129F9588500EB6707 /* SwiftUIPhotoPicker.swift in Sources */,
-				57FA63952BB7017400D59697 /* CameraViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +636,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access camera for you to take selfies, is that ok?";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need permission to save photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -671,6 +672,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access camera for you to take selfies, is that ok?";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate to show your peeps";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add a boarder around your image, is that ok?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need permission to save photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

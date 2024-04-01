@@ -78,6 +78,8 @@ struct ImagePickerView: UIViewControllerRepresentable {
 
 	class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 		var parent: ImagePickerView
+        //taking a guess adding imagesaver
+        var imageSaver = ImageSaver()
 
 		init(_ parent: ImagePickerView) {
 			self.parent = parent

@@ -159,27 +159,27 @@ struct CameraSwitchButton: View {
     var action: () -> Void
     
     var body: some View {
-        Button(action: action) {
-            Circle()
-//                .foregroundStyle(Color.white.opacity(0.6))
-                .frame(width: 45, height: 45, alignment: .center)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .strokeBorder(
-                            LinearGradient(
-                                gradient: Gradient(colors: [Color.gray.opacity(0.6), .black.opacity(0.5)]),
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 2
-                        )
-                )
-                .overlay(
-                    Image(systemName: "camera.rotate.fill")
-                        .foregroundColor(.white))
-                .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
-        }
-    }
+           Button(action: action) {
+               Circle()
+   //                .foregroundStyle(Color.white.opacity(0.6))
+                   .frame(width: 45, height: 45, alignment: .center)
+                   .overlay(
+                       RoundedRectangle(cornerRadius: 15)
+                           .strokeBorder(
+                               LinearGradient(
+                                   gradient: Gradient(colors: [Color.gray.opacity(0.6), .black.opacity(0.5)]),
+                                   startPoint: .topLeading,
+                                   endPoint: .bottomTrailing
+                               ),
+                               lineWidth: 2
+                           )
+                   )
+                   .overlay(
+                       Image(systemName: "camera.rotate.fill")
+                           .foregroundColor(.white))
+                   .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
+           }
+       }
 }
 
 struct FocusView: View {

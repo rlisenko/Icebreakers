@@ -22,6 +22,7 @@ struct EnterNameView: View {
     @FocusState private var keyboardFocused: Bool
 //    var selectedImage: UIImage?
     @Binding var image: Image?
+//    @State private var image: Image?
     @State private var alternateText = "" // New state variable to store alternate text
     @State private var useAlternateText = false // Toggle state
     

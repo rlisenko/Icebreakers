@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct IcebreakersApp: App {
+    @State private static var image: Image? = Image("UnfrozenMasto")
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()   
 //            MyTabBar()
             TakePicView()
-//            EnterNameView()
+//            EnterNameView(image: $image)
+//            CameraView()
         }
     }
 }
