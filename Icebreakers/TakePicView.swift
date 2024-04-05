@@ -24,6 +24,7 @@ struct TakePicView: View {
                         .frame(height: reader.safeAreaInsets.top * 1.1, alignment: .top)
                         .ignoresSafeArea()
                 }
+                Color(.systemGray5)
                 VStack {
                     Spacer()
                     ZStack(alignment: .top) {

@@ -14,6 +14,8 @@ struct MyTabBar: View {
     @State var selectedTab: IceBreakersTab = .people
     @State var color: Color = .blue
     
+    @Environment(\.dynamicTypeSize) var size
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             
@@ -47,13 +49,13 @@ struct MyTabBar: View {
                         ZStack {
                             //Tab's background and border
                             Rectangle()
-                                .frame(width: 75, height: 75)
+                                .frame(width: size < .xxLarge ? 75 : 85, height: 75)
                                 .cornerRadius(15)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 15)
                                         .strokeBorder(
                                             LinearGradient(
-                                                gradient: Gradient(colors: [Color("Lavender").opacity(0.6), .black.opacity(0.5)]),
+                                                gradient: Gradient(colors: [Color("ButtonGradient"), .black.opacity(0.5)]),
                                                 startPoint: .topLeading,
                                                 endPoint: .bottomTrailing
                                             ),
@@ -61,38 +63,40 @@ struct MyTabBar: View {
                                         )
                                 )
                                 .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
-                            // Symbol and label
-                            VStack(spacing: 5) {
-                                ZStack {
-                                    Image(systemName: item.icon)
-                                        .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.8))
-                                        .symbolVariant(.fill)
-                                        .font(.largeTitle)
-                                        .shadow(color: .black.opacity(0.6), radius: 2)
-                                    .frame(width: 50, height: 40)
-                                }
-                                
-                                Text(item.text)
-                                    .foregroundStyle(selectedTab == item.tab ? .white : Color("Lavender").opacity(0.6))
-                                    .font(.caption.bold())
-                                    .lineLimit(2)
-                            }
                             
+                            VStack {
+                                ///Button's SF Symbol Icon
+                                Image(systemName: item.icon)
+                                    .foregroundStyle(selectedTab == item.tab ? .white :  Color("TabIconColor"))
+                                    .symbolVariant(selectedTab == item.tab ? .fill : .none)
+                                    .font(.title)
+                                    .dynamicTypeSize(...DynamicTypeSize.xxLarge)
+                                    .shadow(color: .black.opacity(0.9), radius: 1)
+                                    .frame(width: 50, height: 40)
+                                ///Button's Label Text
+                                Text(item.text)
+                                    .foregroundStyle(selectedTab == item.tab ? .white : Color("TabTextColor"))
+                                    .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                                    .font(.caption.bold())
+                                    .shadow(color: .black.opacity(0.4), radius: 2)
+                            }
                         }
                         .frame(maxWidth: .infinity)
                     }
-                    .foregroundStyle(selectedTab == item.tab ? color : .white.opacity(0.3))
+                    .foregroundStyle(selectedTab == item.tab ? color :  Color("TabButtonBackground"))
                 }
             }
-            .padding(.horizontal, 8)
-            .padding(.top, 14)
-            .padding(.bottom, 25)
-            .frame(height: 110, alignment: .top)
-            .background(.thickMaterial)
-            .frame(maxHeight: .infinity, alignment: .bottom)
+            .padding(.horizontal, 16)
+            .padding(.top, 4)
+            ///This height should not be numeric, determin it through geometry reader
+            .frame(height: 65, alignment: .top)
+            .background(Color("TabBarBackground"))
+//            .background(.ultraThinMaterial)
+            //            .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea()
         }
-        .preferredColorScheme(.dark)
+        .shadow(color: .black.opacity(0.3), radius: 2)
+//        .preferredColorScheme(.dark)
     }
 }
 

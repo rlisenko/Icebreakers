@@ -137,8 +137,8 @@ struct CaptureButton: View {
                 
                     .overlay(
                         Circle()
-                            .stroke(Color("bluishGreen"), lineWidth: 11)
-                            .frame(width: 59, height: 59, alignment: .center)
+                            .stroke(Color("bluishGreen"), lineWidth: 9)
+                            .frame(width: 70, height: 70, alignment: .center)
                     )
                     .overlay(
                         Circle()
@@ -146,10 +146,10 @@ struct CaptureButton: View {
                             .shadow(color: Color(red: 84/255, green: 83/255, blue: 141/255), radius: 4, x: -2, y: -2)
                     )
                 Image(systemName: "camera.shutter.button")
-                    .font(.system(size: 24, weight: .bold))
+                    .font(.system(size: 32, weight: .bold))
                 //                    .font(.title2)
                     .foregroundStyle(.white)
-                
+                    .padding(.bottom, 5)
             }
         }
     }
@@ -160,14 +160,15 @@ struct CameraSwitchButton: View {
     
     var body: some View {
            Button(action: action) {
-               Circle()
-   //                .foregroundStyle(Color.white.opacity(0.6))
+               Rectangle()
+                   .cornerRadius(15)
+                   .foregroundStyle(Color("TabButtonBackground"))
                    .frame(width: 45, height: 45, alignment: .center)
                    .overlay(
                        RoundedRectangle(cornerRadius: 15)
                            .strokeBorder(
                                LinearGradient(
-                                   gradient: Gradient(colors: [Color.gray.opacity(0.6), .black.opacity(0.5)]),
+                                   gradient: Gradient(colors: [Color("ButtonGradient"), .black.opacity(0.5)]),
                                    startPoint: .topLeading,
                                    endPoint: .bottomTrailing
                                ),
@@ -176,8 +177,8 @@ struct CameraSwitchButton: View {
                    )
                    .overlay(
                        Image(systemName: "camera.rotate.fill")
-                           .foregroundColor(.white))
-                   .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
+                           .foregroundStyle(Color("TabIconColor")))
+//                   .shadow(color: Color(red: 41/255, green: 39/255, blue: 130/255).opacity(0.35), radius: 3, x: 0, y: 3)
            }
        }
 }

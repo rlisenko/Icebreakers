@@ -25,6 +25,7 @@ struct PeopleView: View {
                         .frame(height: reader.safeAreaInsets.top * 1.1, alignment: .top)
                         .ignoresSafeArea()
                 }
+                Color(.systemGray5)
                 VStack {
                     Spacer(minLength: 20)
                     Button(action: {
