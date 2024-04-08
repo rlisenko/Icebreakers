@@ -20,12 +20,14 @@ struct PeopleView: View {
     var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
+                Color(.systemGray2)
+                    .ignoresSafeArea()
                 GeometryReader { reader in
                     Color("ClearBlue")
                         .frame(height: reader.safeAreaInsets.top * 1.1, alignment: .top)
                         .ignoresSafeArea()
                 }
-                Color(.systemGray5)
+                
                 VStack {
                     Spacer(minLength: 20)
                     Button(action: {

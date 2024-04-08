@@ -64,7 +64,7 @@ struct AddPersonView: View {
                             }
                         }
                         .sheet(isPresented: $isShowingEnterInfoView) {
-                            EnterNameView(image: $image)
+//                            EnterNameView(image: $image)
 //                            EnterNameView()
                             
                         }
@@ -83,11 +83,11 @@ struct AddPersonView: View {
         .preferredColorScheme(.dark)
     }
     
-    func setImage(uiImage: UIImage?) {
-        guard let uiImage = uiImage else { return }
-        
-        image = Image(uiImage: uiImage)
-    }
+//    func setImage(uiImage: UIImage?) {
+//        guard let uiImage = uiImage else { return }
+//        
+//        image = Image(uiImage: uiImage)
+//    }
 }
 
 struct AddPersonView_Previews: PreviewProvider {

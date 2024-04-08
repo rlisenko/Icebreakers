@@ -14,8 +14,8 @@ struct IcebreakersApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()   
-//            MyTabBar()
-            TakePicView()
+            MyTabBar()
+//            TakePicView()
 //            EnterNameView(image: $image)
 //            CameraView()
         }

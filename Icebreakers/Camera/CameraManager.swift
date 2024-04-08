@@ -19,6 +19,7 @@ enum Status {
 class CameraManager: ObservableObject {
 	
 	@Published var capturedImage: UIImage? = nil
+//    @Binding var capturedImage: UIImage?
 	@Published private var flashMode: AVCaptureDevice.FlashMode = .off
 	
 	@Published var status = Status.unconfigured
@@ -211,6 +212,7 @@ class CameraManager: ObservableObject {
 			if let cameraDelegate {
 				self.photoOutput.capturePhoto(with: photoSettings, delegate: cameraDelegate)
 			}
+//            EnterNameView(image: $capturedImage)
 		}
 	}
 }

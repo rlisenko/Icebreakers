@@ -19,6 +19,7 @@
 		574C06282B86509A00B5ED6F /* TakePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C06272B86509A00B5ED6F /* TakePicView.swift */; };
 		576E470E2B87817B0005A5E1 /* TouchIDFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */; };
 		576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */; };
+		579AFE912BC437660038F5C4 /* PassingUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579AFE902BC437660038F5C4 /* PassingUIImage.swift */; };
 		57AD1DCC2BBB03B6009F3BA5 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DC82BBB03B6009F3BA5 /* CameraViewModel.swift */; };
 		57AD1DCD2BBB03B6009F3BA5 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DC92BBB03B6009F3BA5 /* CameraPreview.swift */; };
 		57AD1DCE2BBB03B6009F3BA5 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AD1DCA2BBB03B6009F3BA5 /* CameraManager.swift */; };
@@ -93,6 +94,7 @@
 		574C06272B86509A00B5ED6F /* TakePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicView.swift; sourceTree = "<group>"; };
 		576E470D2B87817B0005A5E1 /* TouchIDFaceID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDFaceID.swift; sourceTree = "<group>"; };
 		576E470F2B87921E0005A5E1 /* IsYourAppActive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsYourAppActive.swift; sourceTree = "<group>"; };
+		579AFE902BC437660038F5C4 /* PassingUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassingUIImage.swift; sourceTree = "<group>"; };
 		57AD1DC82BBB03B6009F3BA5 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		57AD1DC92BBB03B6009F3BA5 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		57AD1DCA2BBB03B6009F3BA5 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				570885AA2BB1A6A40049ABFA /* CustomBackButton.swift */,
 				570885AC2BB1B79E0049ABFA /* MoreCustomNavBars.swift */,
 				570885AE2BB1B97B0049ABFA /* ThirdView.swift */,
+				579AFE902BC437660038F5C4 /* PassingUIImage.swift */,
 			);
 			path = Sandbox;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				576E47102B87921E0005A5E1 /* IsYourAppActive.swift in Sources */,
 				57F3D16529E98CA3005A18DD /* ContentViewModel.swift in Sources */,
 				57F3D17229E98CA3005A18DD /* ListBuddyView.swift in Sources */,
+				579AFE912BC437660038F5C4 /* PassingUIImage.swift in Sources */,
 				57BD7AE629F4225E000CB1C7 /* MajidExample.swift in Sources */,
 				57F8F1E12B7E7275002D6115 /* PeopleView.swift in Sources */,
 				57F3D13629E98C5F005A18DD /* IcebreakersApp.swift in Sources */,

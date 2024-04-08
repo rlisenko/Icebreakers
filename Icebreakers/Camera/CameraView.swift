@@ -11,6 +11,10 @@ struct CameraView: View {
     
     @ObservedObject var cameraViewModel = CameraViewModel()
     
+    ///Not from original code
+    @Binding var capturedImage: UIImage?
+
+    
     @State private var isFocused = false
     @State private var isScaled = false
     @State private var focusLocation: CGPoint = .zero
@@ -100,6 +104,7 @@ struct CameraView: View {
 
 struct PhotoThumbnail: View {
     @Binding var image: UIImage?
+//    var image: UIImage?
     
     var body: some View {
         Group {
@@ -117,6 +122,11 @@ struct PhotoThumbnail: View {
             }
         }
     }
+    //    func setImage(uiImage: UIImage?) {
+    //        guard let uiImage = uiImage else { return }
+    //
+    //        image = Image(uiImage: uiImage)
+    //    }
 }
 
 struct CaptureButton: View {
@@ -128,7 +138,7 @@ struct CaptureButton: View {
                 
                 Circle()
                     .fill(LinearGradient(gradient: Gradient(colors: [Color(red: 10/255, green: 13/255, blue: 42/255), Color(red: 69/255, green: 67/255, blue: 119/255)]), startPoint: .top, endPoint: .bottom))
-                    .frame(width: 70, height: 70, alignment: .center)
+                    .frame(width: 90, height: 90, alignment: .center)
                     .overlay(
                         Circle()
                             .fill(Color.clear)
@@ -162,7 +172,7 @@ struct CameraSwitchButton: View {
            Button(action: action) {
                Rectangle()
                    .cornerRadius(15)
-                   .foregroundStyle(Color("TabButtonBackground"))
+                   .foregroundStyle(Color("CamSwapButtonBack"))
                    .frame(width: 45, height: 45, alignment: .center)
                    .overlay(
                        RoundedRectangle(cornerRadius: 15)
@@ -196,8 +206,10 @@ struct FocusView: View {
     }
 }
 
-struct CameraView_Previews: PreviewProvider {
-    static var previews: some View {
-        CameraView()
-    }
-}
+//struct CameraView_Previews: PreviewProvider {
+//    @State private static var capturedImage: UIImage? = Image("UnfrozenMasto")
+//    
+//    static var previews: some View {
+//        CameraView(capturedImage: capturedImage)
+//    }
+//}

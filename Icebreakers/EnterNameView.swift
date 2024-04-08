@@ -20,13 +20,27 @@ struct EnterNameView: View {
     @FocusState private var isFocused: Bool
     @FocusState private var isNameFocused: Bool
     @FocusState private var keyboardFocused: Bool
+    
 //    var selectedImage: UIImage?
-    @Binding var image: Image?
+//    @Binding var image: Image?
+    @State private var image: Image?
+    @Binding var inputImage: UIImage?
+//    @State private var inputImage: UIImage?
 //    @State private var image: Image?
     @State private var alternateText = "" // New state variable to store alternate text
     @State private var useAlternateText = false // Toggle state
     
     var body: some View {
+        if let image = inputImage {
+                   // Convert the UIImage to SwiftUI Image
+                   Image(uiImage: image)
+                       .resizable()
+                       .aspectRatio(contentMode: .fit)
+               } else {
+                   // Show a placeholder or empty view if the UIImage is nil
+                   Text("No Image Selected")
+               }
+        
         ZStack(alignment: .top) {
             GeometryReader { reader in
                 Color("bluishGreen")
@@ -157,13 +171,19 @@ struct EnterNameView: View {
         .preferredColorScheme(.dark)
         
     }
+//    func setImage(uiImage: UIImage?) {
+//        guard let uiImage = uiImage else { return }
+//        
+//        image = Image(uiImage: uiImage)
+//    }
 }
 
-struct EnterNameSheet_Previews: PreviewProvider {
-    @State private static var image: Image? = Image("UnfrozenMasto")
-    
-    static var previews: some View {
-                EnterNameView(image: $image)
+//struct EnterNameSheet_Previews: PreviewProvider {
+//    @State private static var image: Image? = Image("UnfrozenMasto")
+//    
+//    static var previews: some View {
+////                EnterNameView(image: $image)
+////        EnterNameView(image: $inputImage)
 //        EnterNameView()
-    }
-}
+//    }
+//}
