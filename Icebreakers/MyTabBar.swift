@@ -13,6 +13,7 @@ struct MyTabBar: View {
     
     @State var selectedTab: IceBreakersTab = .people
     @State var color: Color = .blue
+    @State private var tabselection = 0
     
     @Environment(\.dynamicTypeSize) var size
     
@@ -28,8 +29,8 @@ struct MyTabBar: View {
                     TakePicView()
                         .environmentObject(viewModel)
                 case .trivia:
-                    TakePicView()
-//                           AddPersonView(tabselection: $tabselection)
+//                    AddPersonView()
+                           AddPersonView(tabselection: $tabselection)
                         .environmentObject(viewModel)
                 }
             }

@@ -12,7 +12,7 @@ struct CameraView: View {
     @ObservedObject var cameraViewModel = CameraViewModel()
     
     ///Not from original code
-    @Binding var capturedImage: UIImage?
+//    @Binding var capturedImage: UIImage?
 
     
     @State private var isFocused = false
@@ -206,10 +206,11 @@ struct FocusView: View {
     }
 }
 
-//struct CameraView_Previews: PreviewProvider {
+struct CameraView_Previews: PreviewProvider {
 //    @State private static var capturedImage: UIImage? = Image("UnfrozenMasto")
-//    
-//    static var previews: some View {
+    
+    static var previews: some View {
 //        CameraView(capturedImage: capturedImage)
-//    }
-//}
+        CameraView()
+    }
+}

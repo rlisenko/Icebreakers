@@ -19,6 +19,7 @@ enum Status {
 class CameraManager: ObservableObject {
 	
 	@Published var capturedImage: UIImage? = nil
+    @Published var image: Image?
 //    @Binding var capturedImage: UIImage?
 	@Published private var flashMode: AVCaptureDevice.FlashMode = .off
 	

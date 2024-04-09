@@ -32,7 +32,7 @@ struct AddPersonView: View {
     @State private var isShowingEnterInfoView = false
     @State private var isShowingPolaroidMyInfoView = false
     @State private var image: Image?
-    @State private var inputImage: UIImage?
+//    @State private var inputImage: UIImage?
     @State private var selectedPhoto: PhotosPickerItem?
     @Binding var tabselection: Int
     
@@ -55,16 +55,16 @@ struct AddPersonView: View {
                         .task(id: selectedPhoto) {
                             image = try? await selectedPhoto?.loadTransferable(type: Image.self)
                             guard image != nil else { return }
-                            print(tabselection)
-                            if tabselection == 1 {
-                                isShowingPolaroidMyInfoView = true
-                                
-                            } else {
+//                            print(tabselection)
+//                            if tabselection == 1 {
+//                                isShowingPolaroidMyInfoView = true
+//                                
+//                            } else {
                                 isShowingEnterInfoView = true
-                            }
+//                            }
                         }
                         .sheet(isPresented: $isShowingEnterInfoView) {
-//                            EnterNameView(image: $image)
+                            EnterNameView(image: $image)
 //                            EnterNameView()
                             
                         }

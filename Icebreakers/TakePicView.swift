@@ -30,13 +30,13 @@ struct TakePicView: View {
                 VStack {
                     NavigationLink("EnterNameViewing") {
                         //                            EnterNameView()
-                            EnterNameView(selectedImage: $selectedImage)
+                        EnterNameView(image: $image)
                     }
                     Spacer()
                     ZStack(alignment: .top) {
                         //                        AccessCameraView(selectedImage: self.$selectedImage)
-//                        CameraView()
-                        CameraView(capturedImage: $selectedImage)
+                        CameraView()
+//                        CameraView(capturedImage: $selectedImage)
                             .frame(width: 350, height: 600)
                         Image("PolaroidClear")
                             .resizable()
@@ -53,8 +53,8 @@ struct TakePicView: View {
                     Spacer()
                     VStack {
                         NavigationLink("EnterNameViewing") {
-                            //                            EnterNameView()
-//                            EnterNameView(image: $image)
+//                                                        EnterNameView()
+                            EnterNameView(image: $image)
                         }
                     }
                 }
