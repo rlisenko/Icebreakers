@@ -64,7 +64,7 @@ struct AddPersonView: View {
 //                            }
                         }
                         .sheet(isPresented: $isShowingEnterInfoView) {
-                            EnterNameView(image: $image)
+//                            EnterNameView(cameraViewModel: cameraViewModel)
 //                            EnterNameView()
                             
                         }

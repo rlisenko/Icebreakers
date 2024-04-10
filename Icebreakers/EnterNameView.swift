@@ -12,6 +12,7 @@ import SwiftUI
 struct EnterNameView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: ViewModel
+    @ObservedObject private var cameraViewModel: CameraViewModel
     @Environment(\.presentationMode) var presentationMode
     
     @State private var name = ""
@@ -24,7 +25,7 @@ struct EnterNameView: View {
 //    var selectedImage: UIImage?
     
     ///original way Image was passed
-    @Binding var image: Image?
+//    @Binding var image: Image?
     
 //    @State private var image: Image?
 //    @Binding var inputImage: UIImage?
@@ -34,16 +35,6 @@ struct EnterNameView: View {
     @State private var useAlternateText = false // Toggle state
     
     var body: some View {
-//        if let image = inputImage {
-//                   // Convert the UIImage to SwiftUI Image
-//                   Image(uiImage: image)
-//                       .resizable()
-//                       .aspectRatio(contentMode: .fit)
-//               } else {
-//                   // Show a placeholder or empty view if the UIImage is nil
-//                   Text("No Image Selected")
-//               }
-        
         ZStack(alignment: .top) {
             GeometryReader { reader in
                 Color("bluishGreen")
@@ -59,11 +50,14 @@ struct EnterNameView: View {
                     Image("polaroidstockphoto")
                         .resizable()
                         .frame(width: 170, height: 200)
-                    image?
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150, height: 150)
-                        .padding(.bottom, 30)
+//                    image?
+                    if let image = cameraViewModel.capturedImage {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 150)
+                            .padding(.bottom, 30)
+                    }
                     Text(name)
                         .font(.custom("PermanentMarker-Regular", size: 14))
                         .foregroundStyle(.black)
@@ -174,6 +168,9 @@ struct EnterNameView: View {
         .preferredColorScheme(.dark)
         
     }
+    init (cameraViewModel: CameraViewModel) {
+        self.cameraViewModel = cameraViewModel
+    }
 //    func setImage(uiImage: UIImage?) {
 //        guard let uiImage = uiImage else { return }
 //        
@@ -185,7 +182,8 @@ struct EnterNameSheet_Previews: PreviewProvider {
     @State private static var image: Image? = Image("UnfrozenMasto")
     
     static var previews: some View {
-                EnterNameView(image: $image)
+//                EnterNameView(image: $image)
+        EnterNameView(cameraViewModel: CameraViewModel())
 //        EnterNameView(image: $inputImage)
 //        EnterNameView()
     }

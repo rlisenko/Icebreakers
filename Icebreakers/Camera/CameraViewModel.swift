@@ -20,7 +20,6 @@ class CameraViewModel: ObservableObject {
 	@Published var isPermissionGranted: Bool = false
 	
 	@Published var capturedImage: UIImage?
-    @Published var image: Image?
 	
 	var alertError: AlertError!
 	var session: AVCaptureSession = .init()
@@ -100,18 +99,9 @@ class CameraViewModel: ObservableObject {
 		requestGalleryPermission()
 		let permission = checkGalleryPermissionStatus()
 		if permission.rawValue != 2 {
-			///original
             cameraManager.captureImage()
-            ///test
-            setImage(uiImage: cameraManager.capturedImage)
 		}
 	}
-
-    func setImage(uiImage: UIImage?) {
-        guard let uiImage = uiImage else { return }
-
-        image = Image(uiImage: uiImage)
-    }
 
 	func requestGalleryPermission() {
 		PHPhotoLibrary.requestAuthorization { status in

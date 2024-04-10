@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CameraView: View {
     
-    @ObservedObject var cameraViewModel = CameraViewModel()
+    @ObservedObject private var cameraViewModel: CameraViewModel
     
     ///Not from original code
 //    @Binding var capturedImage: UIImage?
@@ -93,6 +93,10 @@ struct CameraView: View {
             }
         }
     }
+        init(cameraViewModel: CameraViewModel) {
+            self.cameraViewModel = cameraViewModel
+        }
+    
     
     func openSettings() {
         let settingsUrl = URL(string: UIApplication.openSettingsURLString)
@@ -122,11 +126,6 @@ struct PhotoThumbnail: View {
             }
         }
     }
-    //    func setImage(uiImage: UIImage?) {
-    //        guard let uiImage = uiImage else { return }
-    //
-    //        image = Image(uiImage: uiImage)
-    //    }
 }
 
 struct CaptureButton: View {
@@ -211,6 +210,6 @@ struct CameraView_Previews: PreviewProvider {
     
     static var previews: some View {
 //        CameraView(capturedImage: capturedImage)
-        CameraView()
+        CameraView(cameraViewModel: CameraViewModel())
     }
 }

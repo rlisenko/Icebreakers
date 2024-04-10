@@ -11,6 +11,7 @@ import Observation
 
 struct TakePicView: View {
     @EnvironmentObject var viewModel: ViewModel
+    @StateObject var cameraModel: CameraViewModel = CameraViewModel()
     
     @State private var isShowingAddView = false
     @State private var image: Image?
@@ -30,13 +31,12 @@ struct TakePicView: View {
                 VStack {
                     NavigationLink("EnterNameViewing") {
                         //                            EnterNameView()
-                        EnterNameView(image: $image)
+                        EnterNameView(cameraViewModel: cameraModel)
                     }
                     Spacer()
                     ZStack(alignment: .top) {
                         //                        AccessCameraView(selectedImage: self.$selectedImage)
-                        CameraView()
-//                        CameraView(capturedImage: $selectedImage)
+                        CameraView(cameraViewModel: cameraModel)
                             .frame(width: 350, height: 600)
                         Image("PolaroidClear")
                             .resizable()
@@ -51,12 +51,12 @@ struct TakePicView: View {
                             }
                     }
                     Spacer()
-                    VStack {
-                        NavigationLink("EnterNameViewing") {
-//                                                        EnterNameView()
-                            EnterNameView(image: $image)
-                        }
-                    }
+//                    VStack {
+//                        NavigationLink("EnterNameViewing") {
+////                                                        EnterNameView()
+//                            EnterNameView(image: $image)
+//                        }
+//                    }
                 }
             }
         }
