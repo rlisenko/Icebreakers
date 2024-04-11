@@ -8,12 +8,8 @@
 import SwiftUI
 
 struct CameraView: View {
-    
+    ///changed from StateObject because Model gets created in TakePic and passed here and EnterNameView
     @ObservedObject private var cameraViewModel: CameraViewModel
-    
-    ///Not from original code
-//    @Binding var capturedImage: UIImage?
-
     
     @State private var isFocused = false
     @State private var isScaled = false
@@ -23,17 +19,7 @@ struct CameraView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                //				Color.black.edgesIgnoringSafeArea(.all)
-                
                 VStack(spacing: 0) {
-                    //					Button(action: {
-                    //						viewModel.switchFlash()
-                    //					}, label: {
-                    //						Image(systemName: viewModel.isFlashOn ? "bolt.fill" : "bolt.slash.fill")
-                    //							.font(.system(size: 20, weight: .medium, design: .default))
-                    //					})
-                    //					.accentColor(viewModel.isFlashOn ? .yellow : .white)
-                    
                     ZStack {
                         CameraPreview(session: cameraViewModel.session) { tapPoint in
                             isFocused = true

@@ -12,6 +12,7 @@ import SwiftUI
 struct EnterNameView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: ViewModel
+    ///Model passed from TakePic which contains the UIImage
     @ObservedObject private var cameraViewModel: CameraViewModel
     @Environment(\.presentationMode) var presentationMode
     
@@ -22,15 +23,6 @@ struct EnterNameView: View {
     @FocusState private var isNameFocused: Bool
     @FocusState private var keyboardFocused: Bool
     
-//    var selectedImage: UIImage?
-    
-    ///original way Image was passed
-//    @Binding var image: Image?
-    
-//    @State private var image: Image?
-//    @Binding var inputImage: UIImage?
-//    @State private var inputImage: UIImage?
-//    @State private var image: Image?
     @State private var alternateText = "" // New state variable to store alternate text
     @State private var useAlternateText = false // Toggle state
     
@@ -50,7 +42,7 @@ struct EnterNameView: View {
                     Image("polaroidstockphoto")
                         .resizable()
                         .frame(width: 170, height: 200)
-//                    image?
+                    ///Convert CameraView's UIImage to SwiftUI Image just before it was needed for the ZStack creation of a new image
                     if let image = cameraViewModel.capturedImage {
                         Image(uiImage: image)
                             .resizable()
@@ -117,7 +109,7 @@ struct EnterNameView: View {
                         }
                     }
                 }
-                
+  ///Code that will be needed for on-screen keyboard's Return
                 //                NavigationLink {
                 //                    PolaroidDetailView(image: image!, name: name, socialHandle: socialHandle, doneSaving: $doneSaving)
                 //                } label: {
@@ -171,20 +163,12 @@ struct EnterNameView: View {
     init (cameraViewModel: CameraViewModel) {
         self.cameraViewModel = cameraViewModel
     }
-//    func setImage(uiImage: UIImage?) {
-//        guard let uiImage = uiImage else { return }
-//        
-//        image = Image(uiImage: uiImage)
-//    }
 }
 
 struct EnterNameSheet_Previews: PreviewProvider {
     @State private static var image: Image? = Image("UnfrozenMasto")
     
     static var previews: some View {
-//                EnterNameView(image: $image)
         EnterNameView(cameraViewModel: CameraViewModel())
-//        EnterNameView(image: $inputImage)
-//        EnterNameView()
     }
 }

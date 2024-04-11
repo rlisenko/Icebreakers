@@ -30,12 +30,12 @@ struct TakePicView: View {
                 
                 VStack {
                     NavigationLink("EnterNameViewing") {
-                        //                            EnterNameView()
+                        //Temporary link for testing passing Model, link will need to be ran by Capturing image
                         EnterNameView(cameraViewModel: cameraModel)
                     }
                     Spacer()
                     ZStack(alignment: .top) {
-                        //                        AccessCameraView(selectedImage: self.$selectedImage)
+                        ///Passing Model to CameraView that original created this Model
                         CameraView(cameraViewModel: cameraModel)
                             .frame(width: 350, height: 600)
                         Image("PolaroidClear")
@@ -51,12 +51,6 @@ struct TakePicView: View {
                             }
                     }
                     Spacer()
-//                    VStack {
-//                        NavigationLink("EnterNameViewing") {
-////                                                        EnterNameView()
-//                            EnterNameView(image: $image)
-//                        }
-//                    }
                 }
             }
         }
